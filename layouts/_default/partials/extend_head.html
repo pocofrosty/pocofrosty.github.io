@@ -1,0 +1,4 @@
+{{ $noop := .WordCount }}
+{{ if or (.Page.Store.Get "hasMath") .IsNode }}
+  <link href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" rel="stylesheet">
+{{ end }}

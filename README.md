@@ -1,2 +1,2 @@
-# Personal-Website
-Personal Website for Darren
+# math-rendering-with-PaperMod-example
+Testing MathJax with PaperMod Theme
