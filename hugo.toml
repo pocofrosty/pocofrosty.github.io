@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://pocofrosty.io/Personal-Website/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Darren Zheng'
 theme = "PaperMod"
 
 [markup.goldmark.extensions.passthrough]
