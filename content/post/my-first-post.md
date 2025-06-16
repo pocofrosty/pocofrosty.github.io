@@ -5,7 +5,7 @@ title = 'My First Post'
 +++
 This is an explanation of $3x + 2 = 5$
 
-$$2x + 5 = 6 $$
+$$3x + 5 = 6 $$
 
 Example Equation in Summary
 
