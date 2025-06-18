@@ -8,4 +8,4 @@ tags: []
 categories: []
 ---
 
-**test**dwda dwad [test](https://frontmatter.codes/docs/markdown)
+**test** $\textbf{testing}$ dwad [test](https://frontmatter.codes/docs/markdown)

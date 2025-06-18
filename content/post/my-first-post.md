@@ -1,7 +1,7 @@
 +++
-date = '2025-06-15T23:23:56-04:00'
-draft = false
-title = 'My First Post'
+date = "2025-06-15T23:23:56-04:00"
+draft = true
+title = "My First Post"
 +++
 This is an explanation of $3x + 2 = 5$
 

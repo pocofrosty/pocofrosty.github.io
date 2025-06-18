@@ -6,4 +6,4 @@ summary = "testing"
 +++
 {{< details summary="See the details" >}}
 This is a **bold** word.
-{{< /details >}}
+{{< /details >}}dasd
