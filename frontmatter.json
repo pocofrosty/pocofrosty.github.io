@@ -48,10 +48,9 @@
   ],
   "frontMatter.framework.id": "hugo",
   "frontMatter.content.publicFolder": {
-    "path": "src/static",
-    "relative": true
+    "path": "[[workspace]]/static"
   },
-  "frontMatter.preview.host": "http://localhost:1313/Personal-Website/",
+  "frontMatter.preview.host": "http://localhost:1313/",
   "frontMatter.content.pageFolders": [
     {
       "path": "[[workspace]]/content/post",
