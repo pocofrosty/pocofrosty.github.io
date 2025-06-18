@@ -55,6 +55,6 @@
       "title": "post"
     }
   ],
-  "frontMatter.content.fmHighlight": true,
+  "frontMatter.content.fmHighlight": false,
   "frontMatter.git.enabled": true
 }
