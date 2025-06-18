@@ -3,3 +3,22 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+/* 
+Light Mode Links 
+a {
+    color: #0000FF; 
+}
+
+a:hover {
+    color: #0000CC; 
+}
+
+Dark Mode Links
+.dark a {
+    color: #87CEEB; 
+}
+
+.dark a:hover {
+    color: #ADD8E6;
+}
+*/
