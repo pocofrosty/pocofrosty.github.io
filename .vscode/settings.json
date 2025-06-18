@@ -1,4 +1,6 @@
 {
     "[markdown]": {
-    }
+    },
+    "terminal.explorerKind": "integrated",
+    "workbench.colorTheme": "Default Dark Modern"
 }
