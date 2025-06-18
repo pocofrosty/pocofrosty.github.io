@@ -8,4 +8,8 @@ tags: []
 categories: []
 ---
 
-I want to try inserting a picture ![Scenario 1: Across columns](/Bil2l.JPG)
+I want to try inserting a picture ![Scenario 1: Across columns](/Bill.JPG)
+
+{{< notice tip >}}
+This is a warning notice. Be warned!
+{{< /notice >}}

@@ -79,6 +79,3 @@ bower_components
 
 # Built Visual Studio Code Extensions
 *.vsix
-
-#Hide some files for the blog
-content

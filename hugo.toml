@@ -1,7 +1,7 @@
 baseURL = 'https://pocofrosty.github.io/'
 languageCode = 'en-us'
 title = 'Darren Zheng'
-theme = "PaperMod"
+theme = ["hugo-notice", "PaperMod"]
 
 [markup.goldmark.extensions.passthrough]
     enable = true
