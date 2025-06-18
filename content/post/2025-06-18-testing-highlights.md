@@ -8,4 +8,4 @@ tags: []
 categories: []
 ---
 
-I want to try inserting a picture
+I want to try inserting a picture ![Scenario 1: Across columns](/Bil2l.JPG)

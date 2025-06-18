@@ -47,9 +47,6 @@
     }
   ],
   "frontMatter.framework.id": "hugo",
-  "frontMatter.content.publicFolder": {
-    "path": "[[workspace]]/static"
-  },
   "frontMatter.preview.host": "http://localhost:1313/",
   "frontMatter.content.pageFolders": [
     {
@@ -58,5 +55,10 @@
     }
   ],
   "frontMatter.content.fmHighlight": true,
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.media.supportedMimeTypes": [
+    "image/*",
+    "video/*",
+    "audio/*"
+  ]
 }
