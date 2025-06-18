@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/Personal-Website/</loc>
+    <loc>http://localhost:56296/Personal-Website/</loc>
     <lastmod>2025-06-16T23:38:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/post/drp-2025-spring-recap/</loc>
+    <loc>http://localhost:56296/Personal-Website/post/drp-2025-spring-recap/</loc>
     <lastmod>2025-06-16T23:38:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/post/</loc>
+    <loc>http://localhost:56296/Personal-Website/post/</loc>
     <lastmod>2025-06-16T23:38:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/post/my-third-post/</loc>
+    <loc>http://localhost:56296/Personal-Website/post/my-third-post/</loc>
     <lastmod>2025-06-16T23:14:33-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/post/my-second-post/</loc>
+    <loc>http://localhost:56296/Personal-Website/post/my-second-post/</loc>
     <lastmod>2025-06-16T18:27:11-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/post/my-first-post/</loc>
+    <loc>http://localhost:56296/Personal-Website/post/my-first-post/</loc>
     <lastmod>2025-06-15T23:23:56-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/categories/</loc>
+    <loc>http://localhost:56296/Personal-Website/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/Personal-Website/tags/</loc>
+    <loc>http://localhost:56296/Personal-Website/tags/</loc>
   </url>
 </urlset>
