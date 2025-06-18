@@ -6,14 +6,34 @@
     <description>Recent content in Posts on Darren Zheng</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jun 2025 18:27:11 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 23:38:32 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/Personal-Website/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DRP 2025 Spring Recap</title>
+      <link>http://localhost:1313/Personal-Website/post/drp-2025-spring-recap/</link>
+      <pubDate>Mon, 16 Jun 2025 23:38:32 -0400</pubDate>
+      <guid>http://localhost:1313/Personal-Website/post/drp-2025-spring-recap/</guid>
+      <description>&lt;p&gt;I wanted to recap my 6th final semester as part of UPenn&amp;rsquo;s Directed Reading Program. This was my fourth semesters&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Third Post</title>
+      <link>http://localhost:1313/Personal-Website/post/my-third-post/</link>
+      <pubDate>Mon, 16 Jun 2025 23:14:33 -0400</pubDate>
+      <guid>http://localhost:1313/Personal-Website/post/my-third-post/</guid>
+      <description>testing</description>
+    </item>
     <item>
       <title>My Second Post</title>
       <link>http://localhost:1313/Personal-Website/post/my-second-post/</link>
       <pubDate>Mon, 16 Jun 2025 18:27:11 -0400</pubDate>
       <guid>http://localhost:1313/Personal-Website/post/my-second-post/</guid>
-      <description>&lt;p&gt;I want to explain the method of Lagrange multipliers&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io/documentation/&#34;&gt;Testing a Link!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I want to explain the method of Lagrange multipliers&lt;/p&gt;
+&lt;p&gt;Now I want to try
+Now I want to try
+Now I want to try
+Now I want to try
+Now I want to try&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
