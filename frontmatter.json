@@ -60,5 +60,6 @@
     "image/*",
     "video/*",
     "audio/*"
-  ]
+  ],
+  "frontMatter.panel.openOnSupportedFile": false
 }

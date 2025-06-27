@@ -2,6 +2,5 @@
     "[markdown]": {
     },
     "terminal.explorerKind": "integrated",
-    "workbench.colorTheme": "Default Dark Modern",
-    "frontMatter.panel.openOnSupportedFile": false
+    "workbench.colorTheme": "Default Dark Modern"
 }
