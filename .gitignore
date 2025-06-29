@@ -20,6 +20,9 @@ bin-release/
 # Hugo
 public/
 
+#Harper
+harper-custom-dictionary
+
 # Backup Files
 *.markdown~
 *.md~
@@ -79,3 +82,7 @@ bower_components
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+#Random-stuff
+.github/workflows
+.hugo_build.lock

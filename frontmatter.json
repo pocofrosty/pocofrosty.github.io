@@ -61,5 +61,6 @@
     "video/*",
     "audio/*"
   ],
-  "frontMatter.panel.openOnSupportedFile": false
+  "frontMatter.panel.openOnSupportedFile": false,
+  "frontMatter.content.publicFolder": "assets"
 }
