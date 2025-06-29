@@ -85,4 +85,4 @@ bower_components
 
 #Random-stuff
 /.github/workflows
-/.hugo_build.lock
+.hugo_build.lock
