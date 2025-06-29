@@ -84,5 +84,5 @@ bower_components
 *.vsix
 
 #Random-stuff
-.github/workflows
-.hugo_build.lock
+/.github/workflows
+/.hugo_build.lock
