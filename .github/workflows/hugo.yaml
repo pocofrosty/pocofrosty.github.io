@@ -36,6 +36,9 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
     env:
       HUGO_VERSION: 0.147.2
       HUGO_ENVIRONMENT: production
@@ -86,12 +89,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-    del_runs:
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
-    steps:
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
