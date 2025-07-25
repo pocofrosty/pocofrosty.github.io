@@ -2,4 +2,4 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: 'src/content/post'
+    path: 'content/post'
