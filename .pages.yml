@@ -1,1 +1,6 @@
-dawda
+content:
+  - name: posts
+    label: Content
+    path: src/content
+    type: collection
+    fields:
