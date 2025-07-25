@@ -1,6 +1,5 @@
 content:
   - name: posts
-    label: Content
-    path: src/content
+    label: Posts
     type: collection
-    fields:
+    path: 'src/content/post'
