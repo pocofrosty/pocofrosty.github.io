@@ -2,7 +2,14 @@
 baseURL = 'https://pocofrosty.github.io/'
 languageCode = 'en-us'
 title = 'Darren Zheng'
-theme = ["hugo-notice", "PaperMod"]
+RelativeURLs=true
+CanonifyURLs=true
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 # KaTeX support
 [markup.goldmark.extensions.passthrough]
@@ -10,10 +17,3 @@ theme = ["hugo-notice", "PaperMod"]
 [markup.goldmark.extensions.passthrough.delimiters]
     block = [['\[', '\]'], ['$$', '$$']]
     inline = [['\(', '\)'], ['$', '$']]
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
-# Disable default generation of categories/tags pages
-disableKinds = ['taxonomy','term']

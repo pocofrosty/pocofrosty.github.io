@@ -10,7 +10,3 @@ categories:
 ---
 
 I want to try inserting a picture ![Scenario 1: Across columns](/images/github-desktop.jpg)
-
-{{< notice tip >}}
-This is a warning notice. Be warned!
-{{< /notice >}}
