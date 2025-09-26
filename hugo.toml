@@ -15,3 +15,5 @@ theme = ["hugo-notice", "PaperMod"]
   [caches.images]
     dir = ':cacheDir/images'
 
+# Disable default generation of categories/tags pages
+disableKinds = ['taxonomy','term']
