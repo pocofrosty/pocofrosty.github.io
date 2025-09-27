@@ -3,7 +3,7 @@ title: setting up a personal website with Hugo
 description: ""
 date: 2025-06-19T16:52:25.355Z
 preview: ""
-draft: true
+draft: false
 tags: []
 categories: []
 ---
