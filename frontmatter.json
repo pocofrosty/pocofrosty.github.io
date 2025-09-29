@@ -55,8 +55,12 @@
   "frontMatter.preview.host": "http://localhost:1313/",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/content",
+      "path": "[[workspace]]/content/post",
       "title": "post"
+    },
+    {
+      "path": "[[workspace]]/content/about",
+      "title": "about page"
     }
   ],
   "frontMatter.content.fmHighlight": true,
