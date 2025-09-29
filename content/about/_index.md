@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Page
 date: 2025-01-27
 draft: false
 layout: single

@@ -70,6 +70,5 @@
     "video/*",
     "audio/*"
   ],
-  "frontMatter.panel.openOnSupportedFile": false,
-  "frontMatter.content.publicFolder": "assets"
+  "frontMatter.panel.openOnSupportedFile": false
 }
