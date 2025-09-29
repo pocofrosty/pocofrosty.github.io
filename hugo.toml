@@ -107,6 +107,21 @@ ignoreLogs = ['warning-goldmark-raw-html']
   table_stripe_color_dark = "#202020"
   text_color_dark = "#EEE"
   
+  # Giscus comments settings
+  [params.giscus]
+    enable = true
+    repo = "pocofrosty/pocofrosty.github.io"
+    repoId = "R_kgDOO8yaKw"
+    category = "Comments"
+    categoryId = "DIC_kwDOO8yaK84CwB5F"
+    mapping = "pathname"
+    strict = "1"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    theme = "preferred_color_scheme"
+    lang = "en"
+  
   # SEO and social sharing
   # og_image = ""                       # path to social icon
   # publisher_icon = ""                 # path to publisher icon
@@ -115,3 +130,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [taxonomies]
   series = 'series'
   tags = 'tags'
+
+#Clean Public Folder before Live Reload
+[build]
+  cleanDestinationDir = true

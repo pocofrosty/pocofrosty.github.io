@@ -70,5 +70,6 @@
     "video/*",
     "audio/*"
   ],
+  "frontMatter.content.publicFolder": "static",
   "frontMatter.panel.openOnSupportedFile": false
 }

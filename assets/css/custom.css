@@ -1,3 +1,10 @@
 .katex {
     font-size: 1em !important;
 }
+
+.sidebar-about img {
+    max-width: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
