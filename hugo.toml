@@ -70,18 +70,18 @@ ignoreLogs = ['warning-goldmark-raw-html']
   rss_section = "post"
   
   # Sidebar colors
-  moon_sun_background_color = "#515151"
+  moon_sun_background_color = "#515151ff"
   moon_sun_color = "#FFF"
-  sidebar_a_color = "#FFF"
-  sidebar_bg_color = "#202020"
-  sidebar_h1_color = "#FFF"
-  sidebar_img_border_color = "#515151"
+  sidebar_a_color = "#E4E4E4"
+  sidebar_bg_color = "#3E5641"
+  sidebar_h1_color = "#E4E4E4"
+  sidebar_img_border_color = "#5c8060ff"
   sidebar_p_color = "#909090"
-  sidebar_socials_color = "#FFF"
+  sidebar_socials_color = "#E4E4E4"
   
   # Light mode colors
   code_color = "#000"
-  code_background_color = "#E5E5E5"
+  code_background_color = "#ededed"
   code_block_color = "#FFF"
   code_block_background_color = "#272822"
   content_bg_color = "#FAF9F6"
@@ -89,8 +89,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
   link_color = "#268BD2"
   list_color = "#5A5A5A"
   post_title_color = "#303030"
-  table_border_color = "#E5E5E5"
-  table_stripe_color = "#F9F9F9"
+  table_border_color = "#ededed"
+  table_stripe_color = "#ededed"
   text_color = "#222"
   
   # Dark mode colors
@@ -125,7 +125,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # SEO and social sharing
   # og_image = ""                       # path to social icon
   # publisher_icon = ""                 # path to publisher icon
-
+  
 # Taxonomies (required for Poison theme)
 [taxonomies]
   series = 'series'
