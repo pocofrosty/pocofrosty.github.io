@@ -8,3 +8,8 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+li.bullet {
+  list-style-type: disc;
+  margin-left: 1.5em;
+}

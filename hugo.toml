@@ -52,12 +52,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
   front_page_content = ["post"]
   
   # Hide table of contents (optional)
-  # hideToc = true
+  hideToc = false
   
   # Menu configuration
   menu = [
     {Name = "About", URL = "/about/", HasChildren = false},
-    {Name = "Posts", URL = "/post/", Pre = "Recent", HasChildren = true, Limit = 5},
+    {Name = "Posts", URL = "/post/", HasChildren = true, Limit = 5},
   ]
   
   # Social links (comment out any you don't use)
@@ -131,6 +131,13 @@ ignoreLogs = ['warning-goldmark-raw-html']
   series = 'series'
   tags = 'tags'
 
+# Table of Contents Settings
+[markup.tableOfContents]
+  startLevel = 1
+  ordered = true
+  endLevel = 6
+
 #Clean Public Folder before Live Reload
 [build]
   cleanDestinationDir = true
+
