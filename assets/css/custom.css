@@ -1,7 +1,9 @@
+/* Override Katex font scaling */
 .katex {
     font-size: 1em !important;
 }
 
+/* Centers non-rectangular images for sidebar */
 .sidebar-about img {
     max-width: 100%;
     display: block;
@@ -9,7 +11,37 @@
     object-fit: cover;
 }
 
+/* Adds bullets for Recent under Sidebar */
 li.bullet {
   list-style-type: disc;
   margin-left: 1.5em;
+}
+
+/* Modifies the ToC Size */
+.toc-wrapper {
+  max-width: 220px;
+  width: 3000px;
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+
+.toc-wrapper ol {
+  padding-left: 0em;
+}
+
+.container {
+  width: 100%;
+  max-width: 60vw;
+  overflow-x: hidden;
+}
+
+/* Modifies the Post width */
+.content {
+  max-width: 60%;
+  padding-left: 2rem;
+  margin-right: 4rem;
+  padding-right: 2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+   font-size: 1.1em !important;
 }
