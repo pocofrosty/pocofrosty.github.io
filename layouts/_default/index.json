@@ -1,0 +1,12 @@
+[
+{{- range $i, $p := where .Site.RegularPages "Kind" "in" (slice "page" "post") -}}
+  {{- if gt $i 0 }},{{ end }}
+  {
+    "id": {{ $p.File.Path | jsonify }},
+    "title": {{ $p.Title | jsonify }},
+    "summary": {{ $p.Summary | jsonify }},
+    "content": {{ $p.Plain | jsonify }},
+  "url": {{ $p.RelPermalink | jsonify }}
+  }
+{{- end -}}
+]
