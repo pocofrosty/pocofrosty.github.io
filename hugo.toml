@@ -141,3 +141,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [build]
   cleanDestinationDir = true
 
+[outputs]
+  home = ["HTML", "JSON"]
+
+[ouputFormats.JSON]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true
+  isHTML = false
