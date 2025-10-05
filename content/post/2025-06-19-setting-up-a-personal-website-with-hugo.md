@@ -3,7 +3,7 @@ title: Setting up a Personal Website with Hugo
 date: 2025-06-19T16:52:25.355Z
 draft: false
 ---
-Lately, I have been reorganizing some of my past work scattered across many paper notebooks, computer folders, and OneNote. I wanted to create a minimalist, academic site to showcase some of my projects and general mathematical thoughts. At the same time, establishing an internet presence beyond a LinkedIn profile seemed to be a good investment for the modern era. This blog post details part of my journey into setting up this website. While the below explanation may lack certain details, it is useful to check out the following sources for more information.
+Lately, I $\iu$ have $$\iu$$ been reorganizing some of my past work scattered across many paper notebooks, computer folders, and OneNote. I wanted to create a minimalist, academic site to showcase some of my projects and general mathematical thoughts. At the same time, establishing an internet presence beyond a LinkedIn profile seemed to be a good investment for the modern era. This blog post details part of my journey into setting up this website. While the below explanation may lack certain details, it is useful to check out the following sources for more information.
 
 [Hugo Discourse Forums]
 [GitHub Notes on Hugo]
