@@ -22,8 +22,11 @@ Feel free to reach out to me through:
 - **GitHub**: [@pocofrosty](https://github.com/pocofrosty)
 - **LinkedIn**: [Darren Zheng](https://www.linkedin.com/in/darrenzheng24/)
 
+## Curriculum Vitae
+[link](/DRP-files/Dehn-Twists.pdf)
+
 ## About This Site
 
-This website is built with [Hugo](https://gohugo.io/) and uses the [Poison theme](https://github.com/lukeorth/poison). More specific details about how I set up the site can be found here: 
+This website is built with [Hugo](https://gohugo.io/) and uses the [Poison theme](https://github.com/lukeorth/poison). More specific details about how I set up the site can be found [here]({{< ref "post/2025-06-19-setting-up-a-personal-website-with-hugo.md" >}}).
 
 Thanks for visiting, and I hope you find the content here interesting and useful!

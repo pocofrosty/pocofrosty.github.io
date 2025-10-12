@@ -71,5 +71,6 @@
     "audio/*"
   ],
   "frontMatter.content.publicFolder": "static",
-  "frontMatter.panel.openOnSupportedFile": false
+  "frontMatter.panel.openOnSupportedFile": false,
+  "frontMatter.content.snippets": {}
 }
