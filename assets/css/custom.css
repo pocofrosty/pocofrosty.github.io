@@ -3,51 +3,16 @@
     font-size: 1em !important;
 }
 
-/* Centers non-rectangular images for sidebar */
-.sidebar-about img {
-    max-width: 100%;
-    display: block;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 /* Adds bullets for Recent under Sidebar */
 li.bullet {
   list-style-type: disc;
   margin-left: 1.5em;
 }
 
-/* Modifies the ToC Size */
-.toc-wrapper {
-  max-width: 220px;
-  width: 3000px;
-  margin-left: 1rem;
-  margin-right: 4rem;
-}
-
-.toc-wrapper ol {
-  padding-left: 0em;
-}
-
-.container {
-  width: 100%;
-  max-width: 60vw;
-  overflow-x: hidden;
-}
-
-/* Modifies the Post width */
-.content {
-  max-width: 60%;
-  padding-left: 2rem;
-  margin-right: 4rem;
-  padding-right: 2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  font-size: 1.2em !important;
-}
 /* Ensure spacing between date, separator, and reading time. Seems to be a bug with github pages?*/
 .info span {
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 /* Add custom CSS or override theme styles here */
@@ -65,8 +30,8 @@ Also, only show the headings of the menu items and hide the socials (they will b
     }
 
     .sidebar-about img {
-        height: 60px;
-        width: 60px;
+        height: 140px;
+        width: 140px;
     }
 
     .sidebar-about h1 {
@@ -98,6 +63,35 @@ Also, only show the headings of the menu items and hide the socials (they will b
     aside.sidebar a.social, aside.sidebar p.footnote {
         display: none;
     }
+
+    /* Center and make sidebar sticky in mobile view */
+    aside.sidebar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 100;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .content,
+    .container,
+    footer {
+        margin-right: 0 !important;
+        padding-right: 20 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
 }
 
 
@@ -105,4 +99,44 @@ Also, only show the headings of the menu items and hide the socials (they will b
     footer {
         display: none;
     }
+}
+
+
+
+/* Centers non-rectangular images for sidebar */
+.sidebar-about img {
+    max-width: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Modifies the ToC Size */
+.toc-wrapper {
+  max-width: 220px;
+  width: 3000px;
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+
+.toc-wrapper ol {
+  padding-left: 0em;
+}
+
+.container {
+  width: 100%;
+  max-width: 60vw;
+  overflow-x: hidden;
+}
+
+/* Modifies the Post width */
+.content {
+  max-width: 100%;
+  padding-left: 2rem;
+  margin-right: 4rem;
+  padding-right: 2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  font-size: 1.2em !important;
 }
