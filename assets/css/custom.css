@@ -45,3 +45,7 @@ li.bullet {
   margin-right: 0rem;
   font-size: 1.2em !important;
 }
+/* Ensure spacing between date, separator, and reading time. Seems to be a bug with github pages?*/
+.info span {
+  margin-right: 0.5rem;
+}
