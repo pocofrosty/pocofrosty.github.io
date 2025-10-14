@@ -11,7 +11,8 @@ li.bullet {
 
 /* Ensure spacing between date, separator, and reading time. Seems to be a bug with github pages?*/
 .info span {
-  margin-left: 0.5rem;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
 }
 
 /* Add custom CSS or override theme styles here */
