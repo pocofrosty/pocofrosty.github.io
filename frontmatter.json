@@ -3,6 +3,7 @@
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
+      "filePrefix": "",
       "pageBundle": false,
       "previewPath": null,
       "fields": [
