@@ -65,7 +65,7 @@ Also, only show the headings of the menu items and hide the socials (they will b
 
     /* Center and make sidebar sticky in mobile view */
     aside.sidebar {
-        position: sticky;
+        position: static;
         top: 0;
         left: 0;
         right: 0;
