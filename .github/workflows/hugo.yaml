@@ -33,6 +33,17 @@ defaults:
     shell: bash
 
 jobs:
+  #clean-up the past deployment history
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Delete old deployments
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: github-pages
+          onlyRemoveDeployments: true
   # Build job
   build:
     runs-on: ubuntu-latest
