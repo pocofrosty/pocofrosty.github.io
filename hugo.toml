@@ -46,7 +46,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   dark_mode = false
   brand_image = "/images/profile-dance.jpg"    # path to the image shown in the sidebar
   # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-  favicon = "/images/favicon.ico"             # path to favicon (defaults to favicon.png)
+  favicon = "/favicon.ico"             # path to favicon (defaults to favicon.png)
   
   # Show content from your existing `content/post/` section on the front page
   front_page_content = ["post"]
