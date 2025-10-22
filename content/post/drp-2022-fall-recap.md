@@ -1,8 +1,8 @@
-+++
-date = '2025-09-26T23:08:47-04:00'
-draft = false
-title = 'DRP 2022 Fall Recap'
-+++
+---
+date: 2025-09-26T23:08:47-04:00
+draft: false
+title: DRP 2022 Fall Recap
+---
 In this first post (in a planned series of 6), I want to revisit some of the topics of the semesters I spent as part of the Directed Reading Program (DRP) during my time at Penn. For those unfamiliar, a DRP pairs undergraduate students with graduate students to undergo a semester-long supervised study. These programs have a plethora of benefits for all parties involved:
 
 - Undergraduates get to learn about math topics that are not covered in core mathematics classes and have a self-guided experience.
