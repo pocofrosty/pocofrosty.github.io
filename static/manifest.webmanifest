@@ -7,7 +7,7 @@
   "scope": "/",
   "background_color": "#929295",
   "theme_color": "#F5F5FA",
-  "display": "standalone",
+  "display": "browser",
   "icons": [
     { 
       "src": "/favicons/favicon-hd.png",
