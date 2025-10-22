@@ -12,7 +12,7 @@
     { 
       "src": "/favicons/favicon-hd.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "48x48"
     },
     {
       "src": "/favicons/icons-512.png",
