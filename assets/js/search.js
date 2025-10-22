@@ -18,7 +18,6 @@
         return;
     }
 
-    console.log(TotalResults)
     resultsContainer.innerHTML = TotalResults.map(r => `
         <div class="search-result">
             <a href="${r.raw_url}">${r.meta.title}</a>

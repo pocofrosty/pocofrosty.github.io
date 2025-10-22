@@ -2,7 +2,8 @@
 <head>
     <title>Search Results</title>
     {{ partial "head/meta.html" . }}
-    <script type="module" src="/js/search.js" defer></script>
+    {{ $js := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint }}
+    <script type="module" src="{{ $js.RelPermalink }}" defer></script>
 </head>
 <body>
     <main>
