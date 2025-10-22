@@ -1,7 +1,16 @@
 {
+  "lang": "en",
+  "name": "Darren Zheng's Personal Website",
+  "short_name": "Academic Blog",
+  "description": "Blog for Darren Zheng",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#929295",
+  "theme_color": "#F5F5FA",
+  "display": "standalone",
   "icons": [
     { 
-      "src": "/favicons/icons-192.png",
+      "src": "/favicons/favicon-hd.png",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -9,6 +18,12 @@
       "src": "/favicons/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/favicons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ]
 }
