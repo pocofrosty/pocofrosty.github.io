@@ -1,8 +1,9 @@
 ---
 title: Setting up a Personal Website with Hugo
-date: 2025-06-19T16:52:25.355Z
+date: 2025-06-19T16:52:25+00:00
 draft: false
 ---
+
 Lately, I have been reorganizing some of my past work scattered across many paper notebooks, computer folders, and OneNote. I wanted to create a minimalist, academic site to showcase some of my projects and general mathematical thoughts. At the same time, establishing an internet presence beyond a LinkedIn profile seemed to be a good investment for the modern era. This blog post details part of my journey into setting up this website. While this post may lack certain details, it is useful to check out the following sources for more information.
 
 [Hugo Discourse Forums]
@@ -11,7 +12,7 @@ Lately, I have been reorganizing some of my past work scattered across many pape
 
 # Why Hugo?
 
-Static site generators are generally very popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.
+Static site generators are generally dvery popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.
 
 # Choosing a Theme
 
