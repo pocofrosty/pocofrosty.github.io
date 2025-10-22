@@ -17,5 +17,3 @@ a_{n-1} + a_{n -2} &\text{ if } n \geq 2
 \end{cases}\]
 
 Then, we can define a polynomial $f(x) = \sum_{i = 0}^{\infty}{F_{i}z^{i}} = 1 + z + 2z^{2} + 3x^{3} + 5z^{4} + \dots$.
-
-![apply-rule](../../assets/apply-rule.png)
