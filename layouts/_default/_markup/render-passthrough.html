@@ -3,6 +3,7 @@
 {{ $macros := dict 
   "\\iu" "i\\mkern{1mu}" 
 }}
+
 {{ $opts = merge $opts (dict "macros" $macros) }}
 {{ if eq .Type "block" }}
   {{ $opts = merge $opts (dict "displayMode" true) }}
