@@ -1,6 +1,12 @@
 {
   "name": "Darren Zheng's Personal Website",
   "short_name": "Mathematical Musings",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",  
+  "background_color": "#929295",
+  "theme_color": "#F5F5FA",
+  "display": "minimal-ui",
   "icons": [
     {
       "src": "/favicons/web-app-manifest-192x192.png",
