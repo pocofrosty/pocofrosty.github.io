@@ -12,7 +12,7 @@ Lately, I have been reorganizing some of my past work scattered across many pape
 
 # Why Hugo?
 
-Static site generators are generally dvery popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.
+Static site generators are generally very popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.
 
 # Choosing a Theme
 

@@ -44,7 +44,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   brand = "Darren Zheng"
   description = "Personal website of Darren Zheng"
   dark_mode = false
-  brand_image = "/images/profile-dance.jpg"    # path to the image shown in the sidebar
+  brand_image = "/images/profile-professional.jpg"    # path to the image shown in the sidebar
   # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
   # Overwriting layouts/partial/head/head.html. keep below for meta.html
   favicon = "/favicons/favicon.ico"             # path to favicon (defaults to favicon.png)

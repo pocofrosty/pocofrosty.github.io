@@ -22,3 +22,8 @@ Theorem 1.1 - All knots are homeomorphic.
 Proof: Since being homeomorphic is an equivalence relation, it is sufficient to show that $S^{1}$ and any arbitrary knot $K$ are homeomorphic. Let $f: [0, 1] \to \text{Im} (f)$ and $g: [0, 1] \to S^{1}$.
 
 The above theorem shows that we must be more careful with how we plan to define knot equivalence and weaken the notion of homeomorphism. Thus, we can introduce ambient isotopy.
+
+\[\begin{cases}
+a + b \\
+a
+\end{cases}\]

@@ -8,7 +8,7 @@ categories: []
 layout: 
 ---
 
-This isss the second post in my series about my DRP experience. At the start of my sophomore year, I started to take more topology, real analysis, and abstract algebra classes, so I decided to curate my DRP experience to focus on a different topic. I was paired with Xin (Jennifer) Zhang, a combinatorialist and we decided to study generating functions. We followed the great text "generatingfunctionology" by the late Herbert Wilf, a professor at UPenn. 
+This is the second post in my series about my DRP experience. At the start of my sophomore year, I started to take more topology, real analysis, and abstract algebra classes, so I decided to curate my DRP experience to focus on a different topic. I was paired with Xin (Jennifer) Zhang, a combinatorialist and we decided to study generating functions. We followed the great text "generatingfunctionology" by the late Herbert Wilf, a professor at UPenn. 
 
 Generating functions refer to polynomials used to encode particular combinatorial sequences. For example, let's use the Fibonacci sequence defined as 
 \[F_{n} = \begin{cases}

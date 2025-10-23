@@ -3,7 +3,7 @@
   {{ partial "post/info.html" . }}
   {{ .Content }}
   {{ partial "post/navigation.html" . }}
-  {{ if or (.Site.Params.giscus.enable) }}
+  {{ if and (ne .Title "About Page") (.Site.Params.giscus.enable) }}
     {{ partial "post/comments.html" . }}
   {{ end }}
 </div>
