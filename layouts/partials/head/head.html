@@ -22,7 +22,7 @@
     {{ partial "head/favicon.html" . }}
 
     <!-- Service Worker -->
-    {{- $js := resources.Get "js/service-worker.js" }}
+    {{- $js := resources.Get "service-worker.js" }}
     {{- $js = $js | js.Build | minify | fingerprint }}
 
     <script>
