@@ -1,33 +1,73 @@
-/* Override Katex font scaling */
+/* Custom CSS Overrides and Additions */
+
+/* Katex font scaling override */
 .katex {
-    font-size: 1em !important;
+    font-size: 1em;
 }
 
-/* Adds bullets for Recent under Sidebar */
-li.bullet {
-  list-style-type: disc;
-  margin-left: 1.5em;
-}
-
-/* Ensure spacing between date, separator, and reading time. Seems to be a bug with github pages?*/
-.reading-time {
-  margin-left: 0.5rem;
-}
-
-.post-date {
-  margin-right: 0.5rem;
-}
-
-/* Add custom CSS or override theme styles here */
+/* Sidebar styles */
 .sidebar-about h1 {
     font-size: 2em;
 }
 
-/*
-On small screens (mobile), display a small image next to brand text.
-Also, only show the headings of the menu items and hide the socials (they will be in the footer)
-*/
+/* Centers non-rectangular images for sidebar */
+.sidebar-about img {
+    max-width: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Adds bullets for Recent under Sidebar */
+li.bullet {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+/* Spacing adjustments for post metadata */
+.reading-time {
+    margin-left: 0.5rem;
+}
+
+.post-date {
+    margin-right: 0.5rem;
+}
+
+/* Modifies the ToC size */
+.toc-wrapper {
+    max-width: 220px;
+    margin-left: 1rem;
+    margin-right: 4rem;
+}
+
+.toc-wrapper ol {
+    padding-left: 0;
+}
+
+/* Modifies the container width */
+.container {
+    width: 100%;
+    max-width: 60vw;
+    overflow-x: hidden;
+}
+
+/* Modifies the post width */
+.content {
+    max-width: 100%;
+    padding: 0 2rem;
+    font-size: 1.2em;
+}
+
+/* Media Queries */
+
+/* Small screens (mobile) */
 @media (max-width: 48em) {
+    .sidebar-about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .sidebar-about .brand-image {
         margin-right: 15px;
     }
@@ -40,14 +80,9 @@ Also, only show the headings of the menu items and hide the socials (they will b
     .sidebar-about h1 {
         font-size: 1.2em;
     }
+
     .sidebar-about p {
         font-size: 1em;
-    }
-
-    .sidebar-about {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .sidebar-nav {
@@ -59,7 +94,7 @@ Also, only show the headings of the menu items and hide the socials (they will b
         margin: 0 10px;
     }
 
-    .sidebar-nav li.bullet,li.sub-heading {
+    .sidebar-nav li.bullet, li.sub-heading {
         display: none;
     }
 
@@ -70,19 +105,14 @@ Also, only show the headings of the menu items and hide the socials (they will b
     /* Center and make sidebar sticky in mobile view */
     aside.sidebar {
         position: static;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
         z-index: 100;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
         max-width: 100%;
     }
 
@@ -90,56 +120,16 @@ Also, only show the headings of the menu items and hide the socials (they will b
     .container,
     footer {
         margin-right: 0 !important;
-        padding-right: 20 !important;
+        padding-right: 20px !important;
         max-width: 100% !important;
         width: 100% !important;
         box-sizing: border-box;
     }
 }
 
-
+/* Larger screens */
 @media (min-width: 48em) {
     footer {
         display: none;
     }
-}
-
-
-
-/* Centers non-rectangular images for sidebar */
-.sidebar-about img {
-    max-width: 100%;
-    display: block;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-/* Modifies the ToC Size */
-.toc-wrapper {
-  max-width: 220px;
-  width: 3000px;
-  margin-left: 1rem;
-  margin-right: 4rem;
-}
-
-.toc-wrapper ol {
-  padding-left: 0em;
-}
-
-.container {
-  width: 100%;
-  max-width: 60vw;
-  overflow-x: hidden;
-}
-
-/* Modifies the Post width */
-.content {
-  max-width: 100%;
-  padding-left: 2rem;
-  margin-right: 4rem;
-  padding-right: 2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  font-size: 1.2em !important;
 }
