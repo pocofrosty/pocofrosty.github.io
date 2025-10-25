@@ -146,9 +146,3 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 #[outputs]
 home = ["HTML", "RSS", "JSON", "WebAppManifest"]
-
-[ouputFormats.JSON]
-  mediaType = "application/json"
-  baseName = "index"
-  isPlainText = true
-  isHTML = false

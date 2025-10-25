@@ -2,7 +2,7 @@
 
 /* Katex font scaling override */
 .katex {
-    font-size: 1em;
+    font-size: 1em !important;
 }
 
 /* Sidebar styles */
