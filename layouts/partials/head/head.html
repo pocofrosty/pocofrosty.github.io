@@ -22,4 +22,14 @@
     {{ partial "head/favicon.html" . }}
 
     <!-- Service Worker -->
+    {{- $js := resources.Get "service-worker.js" }}
+    {{- $js = $js | js.Build | minify | fingerprint }}
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('{{ $js.RelPermalink}}')
+            });
+        }
+    </script>
 </head>
