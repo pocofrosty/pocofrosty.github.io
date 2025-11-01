@@ -12,7 +12,7 @@ Lately, I have been reorganizing some of my past work scattered across many pape
 
 # Why Hugo?
 
-Static site generators are generally very popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.
+Static site generators are generally very popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.[^1]
 
 # Choosing a Theme
 
@@ -33,4 +33,8 @@ Hugo Documentation notes that it comes shipped with Disqus, a javascript-based c
 2. There are privacy concerns regarding the third-party service.
 3. I didn't like the default design. 
 
-I settled on Giscus, itself heavily inspired by the earlier utterances package. Comments are stored as part of the GitHub Repository's discussions page. The biggest con is that it requires an account to post. Since I don't expect much traffic on my site or GitHub repo, I thought this was fair trade-off. Anyways, for those without an account, they could reach me through my email.
+I settled on Giscus, itself heavily inspired by the earlier utterances package. Comments are stored as part of the GitHub Repository's discussions page. The biggest con is that it requires an account to post. Since I don't expect much traffic on my site or GitHub repo, I thought this was fair trade-off. Anyways, for those without an account, they could reach me through my email. [the mountain][]
+
+[^1]: https://discourse.gohugo.io/t/choosing-the-right-format-for-markdown-links-and-images/55714
+
+[the mountain]: https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81
