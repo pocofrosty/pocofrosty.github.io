@@ -20,6 +20,7 @@ bin-release/
 # Hugo
 public/
 _vendor/
+resources/
 
 #Harper
 harper-custom-dictionary

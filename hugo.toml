@@ -24,7 +24,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 #Theme Imports
 [module]
   [[module.imports]]
-  disable = false
+    disable = false
     path = "github.com/lukeorth/poison"
   [[module.imports]]
     disable = true
@@ -38,6 +38,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [[module.imports]]
     disable = true
     path = "github.com/janraasch/hugo-bearblog"
+  [[module.imports]]
+    disble = false
+    path = "github.com/KKKZOZ/hugo-admonitions"
 
 #Theme Specific Settings
 [params]

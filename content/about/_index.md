@@ -8,7 +8,7 @@ slug: ""
 
 # About Darren Zheng
 
-Hello! I'm Darren Zheng, a recent graduate from the University of Pennsylvania (2025), where I earned a B.A. in Mathematics and statistics minor. My primary mathematical interests are in low-dimensional topology, functional analysis and geometric measure theory. 
+Hello! I'm Darren Zheng, a recent graduate from the University of Pennsylvania (2025), where I earned a B.A. in Mathematics and statistics minor. My primary mathematical interests are in low-dimensional topology, functional analysis and geometric measure theory. [^1]
 
 ## Background
 
@@ -29,4 +29,8 @@ Feel free to reach out to me through:
 
 This website is built with [Hugo](https://gohugo.io/) and uses the [Poison theme](https://github.com/lukeorth/poison). More specific details about how I set up the site can be found [here]({{< ref "post/setting-up-a-personal-website-with-hugo.md" >}}).
 
-Thanks for visiting, and I hope you find the content here interesting and useful!
+Thanks for visiting, and I hope you find the content here interesting and useful! [the mountain][]
+
+[^1]: https://discourse.gohugo.io/t/choosing-the-right-format-for-markdown-links-and-images/55714
+
+[the mountain]: https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81
