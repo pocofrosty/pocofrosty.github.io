@@ -34,10 +34,10 @@ if (workbox) {
     },
   };
 
-  // Serve all HTML pages under /post/ with Cache First strategy
+  // Serve all HTML pages under /post/ with Network First strategy
   workbox.routing.registerRoute(
     ({ url }) => url.pathname.startsWith('/post/'),
-    new workbox.strategies.CacheFirst({
+    new workbox.strategies.NetworkFirst({
       cacheName: 'post-pages-cache',
       plugins: [
         new workbox.expiration.ExpirationPlugin({
