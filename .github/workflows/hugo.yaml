@@ -92,7 +92,7 @@ jobs:
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Build pagefind index
         run: |
-          npx pagefind --site public
+          npx pagefind --config pagefind.yml
       - name: Cache Save
         id: cache-save
         uses: actions/cache/save@v4

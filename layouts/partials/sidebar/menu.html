@@ -7,7 +7,7 @@
       </button>
       <input type="text" name="q" id="sidebar-search-input" placeholder="Search..." />
   </form>
-    <ul class="sidebar-nav">
+    <ul class="sidebar-nav" data-pagefind-ignore = "all">
         {{ range .Site.Params.menu }}
             {{ $menu_item := . }}
             {{ if not $menu_item.URL }}

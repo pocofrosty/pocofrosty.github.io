@@ -51,7 +51,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
   # Overwriting layouts/partial/head/head.html. keep below for meta.html
   favicon = "/favicons/favicon.ico"             # path to favicon (defaults to favicon.png)
-  
+
   # Show content from your existing `content/post/` section on the front page
   front_page_content = ["post"]
   

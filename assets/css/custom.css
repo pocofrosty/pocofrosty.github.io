@@ -215,3 +215,8 @@
   list-style-type: square;
   margin-left: 1.5em;
 }
+
+/* Spacing for search results */
+.search-result {
+  margin-top: 1.2rem;
+}
