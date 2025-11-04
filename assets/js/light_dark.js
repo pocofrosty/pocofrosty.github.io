@@ -1,4 +1,5 @@
-
+/* Light/Dark Theme Toggle and Giscus Integration
+ Copy of code run in jslibs/instantclick/init.js */
 const btn = document.querySelector(".btn-light-dark");
 const moon = document.querySelector(".moon");
 const sun = document.querySelector(".sun");
@@ -12,12 +13,12 @@ function getGiscusTheme() {
 function applyTheme(theme) {
     if (theme === "dark") {
         document.body.classList.add("dark-theme");
-        moon.style.display = 'none';
-        sun.style.display = 'block';
-    } else {
-        document.body.classList.remove("dark-theme");
         moon.style.display = 'block';
         sun.style.display = 'none';
+    } else {
+        document.body.classList.remove("dark-theme");
+        moon.style.display = 'none';
+        sun.style.display = 'block';
     }
     // Giscus theme update
     const giscusFrame = document.querySelector('iframe.giscus-frame');
@@ -75,10 +76,10 @@ if (!localStorage.getItem("theme")) {
     });
 }
 
-btn.addEventListener("click", function () {
+btn.onclick = function () {
     document.body.classList.toggle("dark-theme");
     let theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
     applyTheme(theme);
     localStorage.setItem("theme", theme);
     loadGiscus();
-});
+};
