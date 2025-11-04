@@ -1,66 +1,6 @@
 /* Custom CSS Overrides and Additions */
 
-/* Katex font scaling override */
-.katex {
-    font-size: 1em;
-}
-
-/* Sidebar styles */
-.sidebar-about h1 {
-    font-size: 2em;
-}
-
-/* Centers non-rectangular images for sidebar */
-.sidebar-about img {
-    max-width: 100%;
-    display: block;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Adds bullets for Recent under Sidebar */
-li.bullet {
-    list-style-type: disc;
-    margin-left: 1.5em;
-}
-
-/* Spacing adjustments for post metadata */
-.reading-time {
-    margin-left: 0.5rem;
-}
-
-.post-date {
-    margin-right: 0.5rem;
-}
-
-/* Modifies the ToC size */
-.toc-wrapper {
-    max-width: 220px;
-    margin-left: 1rem;
-    margin-right: 4rem;
-}
-
-.toc-wrapper ol {
-    padding-left: 0;
-}
-
-/* Modifies the container width */
-.container {
-    width: 100%;
-    max-width: 60vw;
-    overflow-x: hidden;
-}
-
-/* Modifies the post width */
-.content {
-    max-width: 100%;
-    padding: 0 2rem;
-    font-size: 1.2em;
-}
-
-/* Media Queries */
-
-/* Small screens (mobile) */
+/* Resize for smaller mobile screens */
 @media (max-width: 48em) {
     .sidebar-about {
         display: flex;
@@ -86,7 +26,8 @@ li.bullet {
     }
 
     .sidebar-nav {
-        margin: 0;
+        margin: 10px;
+        margin-bottom: 1em;
     }
 
     .sidebar-nav li {
@@ -125,6 +66,9 @@ li.bullet {
         width: 100% !important;
         box-sizing: border-box;
     }
+    #sidebar-search-form {
+    --width-of-input: 75% !important;
+  }
 }
 
 /* Larger screens */
@@ -132,4 +76,142 @@ li.bullet {
     footer {
         display: none;
     }
+}
+
+/* Katex font scaling override */
+.katex {
+    font-size: 1em;
+}
+
+/* Footnote styling */
+.footnote-ref::before {
+  content: "[";
+}
+
+.footnote-ref::after {
+  content: "]";
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+#sidebar-search-form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+
+/* styling of whole input container */
+#sidebar-search-form {
+  --timing: 0.3s;
+  --width-of-input: 100%;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styling of Input */
+#sidebar-search-input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+#sidebar-search-form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+#sidebar-search-form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+#sidebar-search-input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+#sidebar-search-form:focus-within:before {
+  transform: scale(1);
+}
+
+/* sizing svg icons */
+#sidebar-search-form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.heading {
+  margin-top: 10px !important;
+}
+
+.sidebar {
+  padding-left: 10px !important;
+  padding-right: 10px !important
+}
+
+/* Centers non-rectangular images for sidebar */
+.sidebar-about img {
+    max-width: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Adjust heading sizes in sidebar about section */
+.sidebar-about h1 {
+    font-size: 1.5em;
+}
+
+.lead { 
+    font-size: 1em;
+}
+
+/* Spacing adjustments for post metadata */
+.reading-time {
+    margin-left: 0.5rem;
+}
+
+.post-date {
+    margin-right: 0.5rem;
+}
+
+/* Limit content width for better readability */
+.content {
+  max-width: 48rem;
+}
+
+.article-toc ol {
+  padding-left: 20px;
+}
+
+/* Adds bullets for Recent under Sidebar */
+.sidebar-nav .bullet {
+  list-style-type: square;
+  margin-left: 1.5em;
 }

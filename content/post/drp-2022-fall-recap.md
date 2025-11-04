@@ -15,6 +15,10 @@ Mathematically, a knot is a map $f: [0, 1] \to \R^{3}$ with $f(0) = f(1)$. This 
 
 [Image of knots]
 
+
+
+\[ \begin{cases} a + 2\end{cases}\]
+
 Notice that we might be able to draw the same physical knot in two different ways. For example, the "unknot" ($S^{1}$) is the same if we add a twist [insert image in line]. Formally, we call any 2-D representation a knot presentation. To prevent ambiguity, a knot presentation should not contain any triple "intersections" in the drawing. For topologists, this doesn't pose much restriction as we usually only care about topological objects up to homeomorphism. However, if we care about classifying knots up to homeomorphism, all knots are equivalent!
 
 Theorem 1.1 - All knots are homeomorphic.
@@ -23,7 +27,7 @@ Proof: Since being homeomorphic is an equivalence relation, it is sufficient to 
 
 The above theorem shows that we must be more careful with how we plan to define knot equivalence and weaken the notion of homeomorphism. Thus, we can introduce ambient isotopy.
 
-\[\begin{cases}
-a + b \\
+$$\begin{cases}
+a + b + c\\
 a
-\end{cases}\]
+\end{cases}$$

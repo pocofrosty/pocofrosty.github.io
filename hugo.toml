@@ -141,7 +141,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [markup.tableOfContents]
   startLevel = 1
   ordered = true
-  endLevel = 2
+  endLevel = 3
 
 #Clean Public Folder before Live Reload
 [build]
