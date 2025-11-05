@@ -9,7 +9,7 @@
                     {{ $js := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint }}
                     <script type="module" src="{{ $js.RelPermalink }}" defer></script>
                 </head>
-                <h1>Search Results</h1>
+                <h1 id="search-results-title">Search Results</h1>
                 <div id="search-results"></div>
             </main>
         </div>
