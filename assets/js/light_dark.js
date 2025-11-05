@@ -1,5 +1,4 @@
-/* Light/Dark Theme Toggle and Giscus Integration
- Copy of code run in jslibs/instantclick/init.js */
+/* Light/Dark Theme Toggle and Giscus Integration */
 const btn = document.querySelector(".btn-light-dark");
 const moon = document.querySelector(".moon");
 const sun = document.querySelector(".sun");
