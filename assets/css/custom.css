@@ -234,3 +234,22 @@
 .content.container::-webkit-scrollbar {
   width: 3px;
 }
+
+#sidebar-search-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;   /* match form height */
+  height: 40px;  /* ensures consistent sizing */
+}
+
+#sidebar-search-form svg {
+  margin-top: 3px; /* remove the nudge */
+  width: 20px;   /* or larger if you want */
+  height: 20px;
+}
+
+/* Dark theme reading time color override */
+body.dark-theme .reading-time {
+  color: #f0ecec; /* or any color you prefer */
+}
