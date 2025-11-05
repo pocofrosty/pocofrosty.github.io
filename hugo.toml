@@ -21,6 +21,15 @@ ignoreLogs = ['warning-goldmark-raw-html']
     block = [['\[', '\]'], ['$$', '$$']]
     inline = [['\(', '\)'], ['$', '$']]
 
+# Render hooks for links and images
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.image]
+        useEmbedded = 'fallback'
+      [markup.goldmark.renderHooks.links]
+        useEmbedded = 'fallback'
+
 #Theme Imports
 [module]
   [[module.imports]]
@@ -124,8 +133,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
     reactionsEnabled = "1"
     emitMetadata = "0"
     inputPosition = "top"
-    theme = "preferred_color_scheme"
-    data-loading="lazy"
+    theme = "preferred_color_scheme" # Automatically uses catppuccin_latte for light and catppuccin_frappe for dark
+    data-loading = "lazy"
     lang = "en"
   
   # SEO and social sharing

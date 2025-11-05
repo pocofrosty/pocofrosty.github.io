@@ -4,7 +4,7 @@
     {
       "name": "default",
       "filePrefix": "",
-      "pageBundle": false,
+      "pageBundle": true,
       "previewPath": null,
       "fields": [
         {
@@ -13,8 +13,8 @@
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
+          "title": "Summary",
+          "name": "summary",
           "type": "string"
         },
         {
@@ -40,14 +40,9 @@
           "type": "tags"
         },
         {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
-        },
-        {
-          "title": "layout",
-          "name": "layout",
-          "type": "string"
+          "title": "Series",
+          "name": "series",
+          "type": "series"
         }
       ]
     }
@@ -57,11 +52,11 @@
   "frontMatter.content.pageFolders": [
     {
       "path": "[[workspace]]/content/post",
-      "title": "post"
+      "title": "blog post"
     },
     {
       "path": "[[workspace]]/content/about",
-      "title": "about page"
+      "title": "about"
     }
   ],
   "frontMatter.content.fmHighlight": true,

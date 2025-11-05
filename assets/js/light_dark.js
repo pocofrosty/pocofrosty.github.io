@@ -6,11 +6,11 @@ const sun = document.querySelector(".sun");
 function getGiscusTheme() {
     const themeFromLS = localStorage.getItem("theme");
     if (themeFromLS) return themeFromLS;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? "catppuccin_frappe" : "catppuccin_latte";
 }
 
 function applyTheme(theme) {
-    if (theme === "dark") {
+    if (theme === "catppuccin_frappe") {
         document.body.classList.add("dark-theme");
         moon.style.display = 'block';
         sun.style.display = 'none';
@@ -23,7 +23,7 @@ function applyTheme(theme) {
     const giscusFrame = document.querySelector('iframe.giscus-frame');
     if (giscusFrame) {
         giscusFrame.contentWindow.postMessage({
-            giscus: { setConfig: { theme: theme === "dark" ? "dark" : "light" } }
+            giscus: { setConfig: { theme: theme === "catppuccin_frappe" ? "catppuccin_frappe" : "catppuccin_latte" } }
         }, "https://giscus.app");
     }
 }
@@ -53,13 +53,13 @@ function loadGiscus() {
 function getInitialTheme() {
     const themeFromLS = localStorage.getItem("theme");
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const themeFromHugo = document.body.classList.contains("dark-theme") ? "dark" : null;
+    const themeFromHugo = document.body.classList.contains("dark-theme") ? "catppuccin_frappe" : null;
     if (themeFromLS) {
         return themeFromLS;
     } else if (themeFromHugo) {
         return themeFromHugo;
     } else {
-        return prefersDark ? "dark" : "light";
+        return prefersDark ? "catppuccin_frappe" : "catppuccin_latte";
     }
 }
 
@@ -69,7 +69,7 @@ loadGiscus();
 
 if (!localStorage.getItem("theme")) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const newTheme = e.matches ? "dark" : "light";
+        const newTheme = e.matches ? "catppuccin_frappe" : "catppuccin_latte";
         applyTheme(newTheme);
         loadGiscus();
     });
@@ -77,7 +77,7 @@ if (!localStorage.getItem("theme")) {
 
 btn.onclick = function () {
     document.body.classList.toggle("dark-theme");
-    let theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+    let theme = document.body.classList.contains("dark-theme") ? "catppuccin_frappe" : "catppuccin_latte";
     applyTheme(theme);
     localStorage.setItem("theme", theme);
     loadGiscus();
