@@ -76,6 +76,15 @@
     footer {
         display: none;
     }
+    
+    .content::-webkit-scrollbar-thumb {
+        background-color: rgb(200, 200, 200);
+        border-radius: 10px;
+    }
+
+    .content::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(150, 150, 150);
+    }
 }
 
 /* Katex font scaling override */
@@ -219,4 +228,9 @@
 /* Spacing for search results */
 .search-result {
   margin-top: 1.2rem;
+}
+
+/* Customize scrollbar for content area */
+.content.container::-webkit-scrollbar {
+  width: 3px;
 }
