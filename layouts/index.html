@@ -9,12 +9,22 @@
         {{ else }}
         <!-- controls the size of the default summmary on home page -->
         {{ .Summary | truncate 500 }}
-        {{ if .Truncated }}
-        <div class="read-more-link">
-            <a href="{{ .RelPermalink }}">Read More…</a>
+        {{ end }}
+
+        <!-- Wrap read-more-link and seriesname in a container -->
+        <div class="post-footer">
+            {{ if .Truncated }}
+            <div class="read-more-link">
+                <a href="{{ .RelPermalink }}">Read More…</a>
+            </div>
+            {{ end }}
+            {{ $Site := .Site }}
+            {{ if .Params.series }}
+            <p class="seriesname">
+                Series: <a href="{{ $Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
+            </p>
+            {{ end }}
         </div>
-        {{ end }}
-        {{ end }}
     </article>
     {{- end }}
 </div>

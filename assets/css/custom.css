@@ -212,7 +212,7 @@
 
 /* Limit content width for better readability */
 .content {
-  max-width: 48rem;
+  max-width: 44rem;
 }
 
 .article-toc ol {
@@ -252,4 +252,24 @@
 /* Dark theme reading time color override */
 body.dark-theme .reading-time {
   color: #f0ecec; /* or any color you prefer */
+}
+
+/*Modify the read-more-link and .seriesname to be inline */
+.post-footer {
+  display: flex;
+  align-items: flex-start;   /* aligns children to the top of the container */
+  justify-content: space-between; /* Push elements to opposite ends */
+}
+
+.post-footer .read-more-link,
+.post-footer .seriesname {
+    margin: 0;
+}
+
+.post {
+  margin-bottom: 60px;
+}
+
+#TableOfContents {
+  margin-left: 0px !important;
 }
