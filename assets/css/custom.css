@@ -273,3 +273,83 @@ body.dark-theme .reading-time {
 #TableOfContents {
   margin-left: 0px !important;
 }
+
+/* ToC Collapsible Styling */
+#contents {
+  font-size: 1rem;        
+  font-weight: 400;       
+  line-height: 1.25;      
+  color: #222;         
+  margin: 1rem 0 .5rem 0; 
+  text-rendering: optimizeLegibility;
+
+}
+summary:empty::marker {
+  content: none;   /* removes the marker entirely */
+}
+
+/* Styling for sidenotes */
+.article-toc {
+  flex-direction: column;
+}
+
+.toc-wrapper {
+  margin-bottom: 20px;
+  position: relative !important; /* or just remove fixed */
+}
+
+.sidenote-wrapper {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Sidenote label styling */
+:root {
+	 --neon-pink: #ff6ec7;
+}
+ .sidenote:hover {
+	 background-color: var(--neon-pink);
+}
+ .sidenote:hover .sidenote-label {
+	 text-decoration: none;
+}
+ .sidenote:hover .sidenote-content {
+	 border: dashed 3px var(--neon-pink);
+}
+ .sidenote .sidenote-label {
+	 text-decoration: underline dashed var(--neon-pink);
+}
+ .sidenote-checkbox {
+	 display: none;
+}
+
+.sidenote-content {
+	 display: none;
+}
+
+.sidenote-item.visible {
+  display: block;
+}
+
+.sidenote-item {
+  display: none;
+}
+
+/* Inline sidenotes on smaller screens */
+ @media screen and (max-width: 1320px) {
+	 .sidenote-content {
+		 position: static;
+		 margin-top: 10px;
+		 margin-bottom: 10px;
+		 width: 100%;
+		 display: none;
+	}
+	 .sidenote-checkbox:checked ~ .sidenote-content {
+		 display: block;
+	}
+
+  .sidenote-item {
+    display: none !important
+  }
+}
+ 
