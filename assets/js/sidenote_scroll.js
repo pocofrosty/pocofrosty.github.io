@@ -16,7 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        root: document.querySelector('.content-container') // Updated to use the content container
+        root: document.querySelector('.content-container'), // Updated to use the content container
+        rootMargin: `-${document.querySelector('.article-toc h4').getBoundingClientRect().top}px 0px 0px 0px`
     });
 
     const sidenoteLabels = document.querySelectorAll(".sidenote-label");
