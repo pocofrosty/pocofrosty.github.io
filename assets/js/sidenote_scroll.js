@@ -1,4 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
+    observer = initializeObserver();
+});
+
+function initializeObserver() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const number = entry.target.getAttribute('for').match(/\d+$/)[0];
@@ -17,12 +21,43 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }, {
         root: document.querySelector('.content-container'), // Updated to use the content container
-        rootMargin: `-${document.querySelector('.article-toc h4').getBoundingClientRect().top}px 0px 0px 0px`
+        rootMargin: calculateRootMargin()
     });
 
     const sidenoteLabels = document.querySelectorAll(".sidenote-label");
     sidenoteLabels.forEach(label => {
         observer.observe(label);
+        syncSidenoteLabel(label);
     });
-});
 
+    return observer;
+}
+
+function calculateRootMargin() {
+    const tocHeader = document.querySelector('.article-toc h4');
+    if (tocHeader) {
+        return `-${tocHeader.getBoundingClientRect().bottom + 50}px 0px 0px 0px`;
+    }
+    return '0px'; // Default margin if the element is not found
+}
+
+function syncSidenoteLabel(label) {
+    const number = label.getAttribute('for').match(/\d+$/)[0];
+    const sidenoteItem = document.querySelector(`.sidenote-item[number="${number}"]`);
+
+    if (sidenoteItem) {
+        const topDistance = label.getBoundingClientRect().top;
+        sidenoteItem.style.top = `${topDistance}px`;
+    }
+}
+
+// Add scroll event listener to the content container
+const container = document.querySelector('main.content.container');
+if (container) {
+  container.addEventListener('scroll', function () {
+    const sidenoteLabels = document.querySelectorAll(".sidenote-label");
+    sidenoteLabels.forEach(label => {
+        syncSidenoteLabel(label);
+    });
+  });
+}
