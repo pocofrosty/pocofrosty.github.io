@@ -21,7 +21,6 @@ function initializeObserver() {
         });
     }, {
         root: document.querySelector('.content-container'), // Updated to use the content container
-        rootMargin: calculateRootMargin()
     });
 
     const sidenoteLabels = document.querySelectorAll(".sidenote-label");
@@ -31,14 +30,6 @@ function initializeObserver() {
     });
 
     return observer;
-}
-
-function calculateRootMargin() {
-    const tocHeader = document.querySelector('.article-toc h4');
-    if (tocHeader) {
-        return `-${tocHeader.getBoundingClientRect().bottom + 50}px 0px 0px 0px`;
-    }
-    return '0px'; // Default margin if the element is not found
 }
 
 function syncSidenoteLabel(label) {

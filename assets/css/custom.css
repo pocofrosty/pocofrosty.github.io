@@ -289,8 +289,16 @@ summary:empty::marker {
 }
 
 /* Styling for sidenotes */
+@media screen and (min-width: 100em) {
+    .article-toc {
+        display: flex !important;
+    }
+}
+
 .article-toc {
   flex-direction: column;
+  align-items: flex-start;
+  height: 85%;
 }
 
 .toc-wrapper {
@@ -300,7 +308,9 @@ summary:empty::marker {
 
 .sidenote-wrapper {
   flex: 1;
-  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Sidenote label styling */
