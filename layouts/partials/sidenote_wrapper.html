@@ -1,8 +1,11 @@
+{{ $sidenotes := findRE "<span class=\"sidenote-content\">([^<]*)</span>" .Content }}
+{{ if $sidenotes }}
 <h4>Sidenotes</h4>
+{{ end }}
 <div class="sidenote-wrapper">
     <div id="sidenote-list">
         {{ $index := -1 }}
-        {{ range (findRE "<span class=\"sidenote-content\">([^<]*)</span>" .Content) }}
+        {{ range $sidenotes }}
             {{ $index = add $index 1 }}
             <div class="sidenote-item" number="{{ $index }}">{{ . | replaceRE "<span class=\"sidenote-content\">|</span>" "" }}</div>
         {{ end }}
