@@ -36,9 +36,12 @@ function syncSidenoteLabel(label) {
     const number = label.getAttribute('for').match(/\d+$/)[0];
     const sidenoteItem = document.querySelector(`.sidenote-item[number="${number}"]`);
 
+    const sidenoteTitle = document.querySelector('.article-toc > h4').getBoundingClientRect().top;
     if (sidenoteItem) {
         const topDistance = label.getBoundingClientRect().top;
-        sidenoteItem.style.top = `${topDistance}px`;
+        sidenoteItem.style.top = `${topDistance - sidenoteTitle - sidenoteItem.getBoundingClientRect().height}px`;
+    } else {
+        console.warn(`Sidenote item not found for label ${number}`);
     }
 }
 
@@ -52,3 +55,12 @@ if (container) {
     });
   });
 }
+
+document.querySelector('.toc-wrapper').addEventListener('click', function() {
+    setTimeout(() => {
+        const sidenoteLabels = document.querySelectorAll(".sidenote-label");
+        sidenoteLabels.forEach(label => {
+            syncSidenoteLabel(label);
+        });
+    }, 0);
+});
