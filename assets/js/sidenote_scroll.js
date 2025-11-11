@@ -45,6 +45,25 @@ function syncSidenoteLabel(label) {
     }
 }
 
+function ensureNoOverlap() {
+    const sidenotes = Array.from(document.querySelectorAll('.sidenote-item.visible'));
+
+    sidenotes.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+
+    for (let i = 1; i < sidenotes.length; i++) {
+        const prev = sidenotes[i - 1];
+        const current = sidenotes[i];
+
+        const prevBottom = prev.getBoundingClientRect().bottom;
+        const currentTop = current.getBoundingClientRect().top;
+
+        if (currentTop < prevBottom) {
+            const overlap = prevBottom - currentTop;
+            current.style.top = `${parseFloat(current.style.top || 0) + overlap + 10}px`;
+        }
+    }
+}
+
 // Add scroll event listener to the content container
 const container = document.querySelector('main.content.container');
 if (container) {
@@ -53,6 +72,7 @@ if (container) {
     sidenoteLabels.forEach(label => {
         syncSidenoteLabel(label);
     });
+    ensureNoOverlap();
   });
 }
 
@@ -62,5 +82,6 @@ document.querySelector('.toc-wrapper').addEventListener('click', function() {
         sidenoteLabels.forEach(label => {
             syncSidenoteLabel(label);
         });
+        ensureNoOverlap();
     }, 0);
 });
