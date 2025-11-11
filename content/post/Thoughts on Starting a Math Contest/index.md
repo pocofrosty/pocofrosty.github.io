@@ -2,7 +2,7 @@
 created: 2025-10-28T01:05:32-04:00
 modified: 2025-10-28T01:07:08-04:00
 date: 2025-09-26T23:08:47-04:00
-draft: false
+draft: true
 title: Thoughts on Starting a Math Contest
 summary: hello
 ---

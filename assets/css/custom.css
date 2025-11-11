@@ -326,8 +326,9 @@ summary:empty::marker {
  .sidenote:hover .sidenote-content {
 	 border: dashed 3px var(--neon-pink);
 }
- .sidenote .sidenote-label {
-	 text-decoration: underline dashed var(--neon-pink);
+
+.sidenote {
+  border-bottom: dashed 3px var(--neon-pink);
 }
  .sidenote-checkbox {
 	 display: none;
@@ -347,7 +348,8 @@ summary:empty::marker {
 }
 
 /* Inline sidenotes on smaller screens */
- @media screen and (max-width: 1320px) {
+/* temporarily enable on all screens */
+ @media screen {
 	 .sidenote-content {
 		 position: static;
 		 margin-top: 10px;
