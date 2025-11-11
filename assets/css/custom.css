@@ -423,3 +423,14 @@ summary:empty::marker {
   list-style-position: inside;
 }
 
+/* Code Block Styling */
+pre {
+  overflow-x: auto;
+}
+
+.highlight figcaption span {
+  background-color: var(--link-color); /* or a custom color */
+  color: #fff;
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+}
