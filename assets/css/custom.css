@@ -347,9 +347,8 @@ summary:empty::marker {
   display: none;
 }
 
-/* Inline sidenotes on smaller screens */
-/* temporarily enable on all screens */
- @media screen {
+/* Sidenote inline only */
+ @media screen and (max-width: 100em) {
 	 .sidenote-content {
 		 position: static;
 		 margin-top: 10px;
@@ -365,4 +364,62 @@ summary:empty::marker {
     display: none !important
   }
 }
- 
+
+/* Inline label styling */
+:root {
+	 --gold: #e8be33;
+}
+ .inline:hover {
+	 background-color: var(--gold);
+}
+ .inline:hover .inline-label {
+	 text-decoration: none;
+}
+ .inline:hover .inline-content {
+	 border: dashed 3px var(--gold);
+}
+
+.inline {
+  border-bottom: dashed 3px var(--gold);
+}
+ .inline-checkbox {
+	 display: none;
+}
+
+.inline-item {
+  position: absolute;
+  display: none;
+}
+
+.inline-content {
+  position: static;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	display: none;
+}
+
+.inline-checkbox:checked ~ .inline-content {
+ display: block;
+}
+
+.inline-item {
+  display: none !important;
+}
+
+/* Footnote image styling */
+.footnotes li img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0.5em auto; /* centers image */
+}
+
+.footnotes li {
+  list-style-position: outside;
+}
+
+.footnotes li:has(img) {
+  list-style-position: inside;
+}
+
