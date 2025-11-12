@@ -1,1 +1,13 @@
+Borel
+CRON
+Catppuccin
+GitJournal
+InstantPage
+Mattila
+ServiceWorkers
+WorkBox
 bilinear
+frac
+hugo
+mathcal
+sidenotes

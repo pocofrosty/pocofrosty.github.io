@@ -31,7 +31,7 @@ Recall that $\gamma(n, s)$ is a constant that relies on $n$ and $s$.
 We have the induced distance measure $\delta(\mu)$ defined on all continuous functions $\varphi$ from
 \[\int{\varphi \,d\delta(\mu)} = \int\int{\varphi(\abs{x-y})\,d\mu x \,d\mu y}\]
 
-The weighted spherical averages $\Sigma(\mu)$ and distance measures $\Delta(\mu)$ are {{< sidenote "given" >}} Hello! {{< /sidenote >}} respectively by $$\Sigma(\mu)(r) = r^{\frac{n-1}{2}}\sigma(\mu)(r)\text{ and }\int \varphi \,d \Delta(\mu)=\int u^{(1-n) / 2} \varphi(u) \,d \delta(\mu) u$$
+The weighted spherical averages $\Sigma(\mu)$ and distance measures $\Delta(\mu)$ are given respectively by $$\Sigma(\mu)(r) = r^{\frac{n-1}{2}}\sigma(\mu)(r)\text{ and }\int \varphi \,d \Delta(\mu)=\int u^{(1-n) / 2} \varphi(u) \,d \delta(\mu)$$
 
 ## Some Initial Decomposition
 

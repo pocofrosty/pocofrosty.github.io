@@ -212,7 +212,7 @@
 
 /* Limit content width for better readability */
 .content {
-  max-width: 44rem;
+  max-width: 40rem;
 }
 
 .article-toc ol {
@@ -301,6 +301,10 @@ summary:empty::marker {
   height: 85%;
 }
 
+.article-toc ol li {
+  margin-bottom: 5px;
+}
+
 .toc-wrapper {
   margin-bottom: 20px;
   position: relative !important; /* or just remove fixed */
@@ -375,7 +379,7 @@ summary:empty::marker {
  .inline:hover .inline-label {
 	 text-decoration: none;
 }
- .inline:hover .inline-content {
+ .inline .inline-content {
 	 border: dashed 3px var(--gold);
 }
 
@@ -428,8 +432,13 @@ pre {
   overflow-x: auto;
 }
 
+.highlight {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .highlight figcaption span {
-  background-color: var(--link-color); /* or a custom color */
+  background-color: purple; /* or a custom color */
   color: #fff;
   padding: 0.25em 0.5em;
   border-radius: 3px;
