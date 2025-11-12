@@ -57,11 +57,13 @@ if (container) {
 }
 
 const tableOfContentsDropdown = document.querySelector(".toc-wrapper");
-tableOfContentsDropdown.addEventListener('click', function() {
-    setTimeout(() => {
-        const sidenoteLabels = document.querySelectorAll(".sidenote-label");
-        sidenoteLabels.forEach(label => {
-            syncSidenoteLabel(label);
-        });
-    }, 0);
-});
+if (tableOfContentsDropdown) {
+    tableOfContentsDropdown.addEventListener('click', function() {
+        setTimeout(() => {
+            const sidenoteLabels = document.querySelectorAll(".sidenote-label");
+            sidenoteLabels.forEach(label => {
+                syncSidenoteLabel(label);
+            });
+        }, 0);
+    });
+}
