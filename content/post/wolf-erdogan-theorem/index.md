@@ -40,25 +40,25 @@ Assume that $I_{\frac{n+1}{2}}(\mu) < \infty$. Then, we can calculate {{< inline
 We can also get a relationship between the weighted distance measure and weighted spherical averages involving the Bessel function via spherical coordinates.
 \[\Delta(\mu)(u) = c(n)\sqrt{u}\int_{0}^{\infty}{\sqrt{r} J_{\frac{n-2}{2}}(2\pi r u) \Sigma(\mu)(r) \,dr}\]
 
-Using an {{< inlineNote "asymptotic as $u \to \infty$" >}} $$\begin{align}
+Using an {{< inlineNote "asymptotic as $u \to \infty$" >}} $$\begin{align*}
 J_{m}(u) &= \frac{\sqrt{2}}{\sqrt{\pi u}}\cos(u - \frac{\pi m}{2} - \frac{\pi}{4}) + O(u^{-\frac{3}{2}}) \\
 \implies c(n)J_{\frac{n-2}{2}}(2\pi u) &= \frac{\sqrt{2}}{\sqrt{ 2\pi^{2} u}}\cos(2\pi u - \frac{\pi n - 2 \pi}{4} - \frac{\pi}{4}) + O((2\pi u)^{-\frac{3}{2}}) \\
 &= \frac{1}{\sqrt{u}}(a_{1}\cos(2\pi u) + b_{1} \sin(2\pi u)) + K(u) \\
 \left| K(u) \right| &\lesssim \min\{u^{-\frac{3}{2}}, u^{-\frac{1}{2}}\} \\
-\end{align}$$ 
+\end{align*}$$ 
 Here $a_{1}, b_{1}$ are complex constants as the result of cosine difference identity. {{< /inlineNote >}}, we get that $c(n)J_{\frac{n-2}{2}} = \frac{1}{\sqrt{u}}(a_{1}\cos(2\pi u) + b_{1} \sin(2\pi u)) + K(u)$.
 
 For $u > 0$, we want to split our weighted distance measure $\Delta(\mu)(u)$ into the sum of two parts 
-\[\begin{align}
+\[\begin{align*}
 S(\mu)(u) &= a_{2}\int_{0}^{\infty}{\cos(2\pi r u) \Sigma(\mu)(r)\,dr} + b_{2}\int_{0}^{\infty}{\sin(2\pi r u) \Sigma(\mu)(r) \,dr} \\
 L(\mu)(u) &= \sqrt{u}\int_{0}^{\infty}{\sqrt{r} \Sigma(\mu)(r) K(ru) \,dr}
-\end{align}\]
+\end{align*}\]
 
 If we assume that $\Sigma(\mu) \in L^{2}(\R)$, some additional {{< inlineNote "calculation" >}} Let $\Sigma_{1}(\mu)(r) = \Sigma(\mu)(\left| r\right|)$ and $\Sigma_{2}(\mu)(r) = -\Sigma(\mu)(\left| r \right|)$; these are just the respective even and odd extensions of $\Sigma(\mu)(r)$. Then, for $u > 0$, 
-$$\begin{align}
+$$\begin{align*}
 S(\mu)(u) &= \frac{a_{2}}{2}\int_{-\infty}^{\infty}{\cos(2\pi r u)\Sigma_{1}(\mu)(r)\,dr} + \frac{b_{2}}{2}\int_{-\infty}^{\infty}{\sin{2\pi r u}\Sigma_{2}(\mu)(r) \,dr} \\
 &= \frac{a_{2}}{2}\int_{-\infty}^{\infty}{e^{-2\pi i\mkern{1mu} r u}\Sigma_{1}(\mu)(r)\,dr} + \frac{i\mkern{1mu} b_{2}}{2}\int_{-\infty}^{\infty}{e^{2\pi i\mkern{1mu} r u}\Sigma_{2}(\mu)(r) \,dr}
-\end{align}$$
+\end{align*}$$
 
 Returning to $\Delta(\mu)(u) = S(\mu)(u) + L(\mu)(u)$, if the LHS equals $0$ (which is the case when $u < 0$), we can define $S(u) = L(\mu)(u)$ when $u < 0$. Thus, we get to break up $S(\mu)(u)$ based on sign into 
 
