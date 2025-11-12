@@ -415,8 +415,8 @@ summary:empty::marker {
 .footnotes li img {
   max-width: 50%;
   height: auto;
-  display: block;
-  margin: 0.5em auto; /* centers image */
+  display: inline-block;
+  vertical-align: top;
 }
 
 .footnotes li {
@@ -424,7 +424,7 @@ summary:empty::marker {
 }
 
 .footnotes li:has(img) {
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 /* Code Block Styling */
