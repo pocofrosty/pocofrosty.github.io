@@ -9,8 +9,6 @@ self.skipWaiting();
 workbox.core.clientsClaim();
 
 if (workbox) {
-  console.log('Workbox loaded successfully');
-
   // Precache about, index, 404 pages
   workbox.precaching.precacheAndRoute([
     { url: '/', revision: '7' },
@@ -96,5 +94,4 @@ if (workbox) {
         })
     );
 } else {
-  console.log('Workbox failed to load');
 }

@@ -47,6 +47,9 @@ Don't forget to include the following style-sheet in the head of your project!
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" rel="stylesheet">
 ```
 
+Importantly, I prefer to use `$$...$$` and `$...$` as my delimiters for block and inline.
+
+
 # Comments System using Giscus
 
 Hugo Documentation notes that it comes shipped with Disqus, a javascript-based commenting system. However, I'd recommend not using it since:

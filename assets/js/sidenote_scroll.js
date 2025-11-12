@@ -56,7 +56,8 @@ if (container) {
   });
 }
 
-document.querySelector('.toc-wrapper').addEventListener('click', function() {
+const tableOfContentsDropdown = document.querySelector(".toc-wrapper");
+tableOfContentsDropdown.addEventListener('click', function() {
     setTimeout(() => {
         const sidenoteLabels = document.querySelectorAll(".sidenote-label");
         sidenoteLabels.forEach(label => {

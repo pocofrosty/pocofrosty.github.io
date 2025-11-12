@@ -10,7 +10,7 @@ series: ""
 
 ## The Problem Set-up
 Falconer's Conjecture asks if
-\[\dim{A} > \frac{n}{2} \text{ implies } \mathcal{L}^{1}(D(A)) > 0\]
+$$\dim{A} > \frac{n}{2} \text{ implies } \mathcal{L}^{1}(D(A)) > 0$$
 From Theorem 4.6 in [Mattila][], we already have seen that for a Borel set $A \subset \R^{n}$, we get a positive Lebesgue measure of the distance set whenever $\dim{A} > \frac{n}{2} + \frac{1}{2}$[^1]. We can address the gap in the hypothesis via the following theorem.
 
 **Theorem 15.1** (Wolf-Erdoğan Distance Set Theorem): Let $A \subset \R^{n}$ be a Borel set and $n \geq 2$. 
@@ -22,14 +22,14 @@ We aim to summarize the treatment given in Chapters 15 and 16 of [Mattila][]. Fu
 
 ### Definitions
 We can define the quadratic spherical averages of a measure $\mu \in \mathcal{M}(\R^{n})$ for $r > 0$ by
-\[\sigma(\mu)(r) = \int_{S^{n-1}}{\abs{\hat{\mu}(r\nu)}^{2}\,d\sigma^{n-1}\nu} = r^{1-n}\int_{S^{n-1}(r)}{\abs{\hat{\mu}(\nu)}^{2} \,d\sigma_{r}^{n-1}\nu}\]
+$$\sigma(\mu)(r) = \int_{S^{n-1}}{\abs{\hat{\mu}(r\nu)}^{2}\,d\sigma^{n-1}\nu} = r^{1-n}\int_{S^{n-1}(r)}{\abs{\hat{\mu}(\nu)}^{2} \,d\sigma_{r}^{n-1}\nu}$$
 
 The energy integrals of a measure $\mu$ are
 $$I_s(\mu)=\gamma(n, s) \int_0^{\infty} \sigma(\mu)(r) r^{s-1} d r, \quad 0<s<n$$
 Recall that $\gamma(n, s)$ is a constant that relies on $n$ and $s$.
 
 We have the induced distance measure $\delta(\mu)$ defined on all continuous functions $\varphi$ from
-\[\int{\varphi \,d\delta(\mu)} = \int\int{\varphi(\abs{x-y})\,d\mu x \,d\mu y}\]
+$$\int{\varphi \,d\delta(\mu)} = \int\int{\varphi(\abs{x-y})\,d\mu x \,d\mu y}$$
 
 The weighted spherical averages $\Sigma(\mu)$ and distance measures $\Delta(\mu)$ are given respectively by $$\Sigma(\mu)(r) = r^{\frac{n-1}{2}}\sigma(\mu)(r)\text{ and }\int \varphi \,d \Delta(\mu)=\int u^{(1-n) / 2} \varphi(u) \,d \delta(\mu)$$
 
@@ -38,7 +38,7 @@ The weighted spherical averages $\Sigma(\mu)$ and distance measures $\Delta(\mu)
 Assume that $I_{\frac{n+1}{2}}(\mu) < \infty$. Then, we can calculate {{< inlineNote "$\Sigma(\mu) \in L^{1}$">}} $$\int_{0}^{\infty}\lvert \Sigma(\mu) \rvert = \int_{0}^{\infty}{\lvert r^{\frac{n-1}{2}} \sigma(\mu)(r) \rvert} \ll \lvert I_{s}(\mu) \rvert < \infty$$ {{< /inlineNote >}}.
 
 We can also get a relationship between the weighted distance measure and weighted spherical averages involving the Bessel function via spherical coordinates.
-\[\Delta(\mu)(u) = c(n)\sqrt{u}\int_{0}^{\infty}{\sqrt{r} J_{\frac{n-2}{2}}(2\pi r u) \Sigma(\mu)(r) \,dr}\]
+$$\Delta(\mu)(u) = c(n)\sqrt{u}\int_{0}^{\infty}{\sqrt{r} J_{\frac{n-2}{2}}(2\pi r u) \Sigma(\mu)(r) \,dr}$$
 
 Using an {{< inlineNote "asymptotic as $u \to \infty$" >}} $$\begin{align*}
 J_{m}(u) &= \frac{\sqrt{2}}{\sqrt{\pi u}}\cos(u - \frac{\pi m}{2} - \frac{\pi}{4}) + O(u^{-\frac{3}{2}}) \\
@@ -49,10 +49,10 @@ J_{m}(u) &= \frac{\sqrt{2}}{\sqrt{\pi u}}\cos(u - \frac{\pi m}{2} - \frac{\pi}{4
 Here $a_{1}, b_{1}$ are complex constants as the result of cosine difference identity. {{< /inlineNote >}}, we get that $c(n)J_{\frac{n-2}{2}} = \frac{1}{\sqrt{u}}(a_{1}\cos(2\pi u) + b_{1} \sin(2\pi u)) + K(u)$.
 
 For $u > 0$, we want to split our weighted distance measure $\Delta(\mu)(u)$ into the sum of two parts 
-\[\begin{align*}
+$$\begin{align*}
 S(\mu)(u) &= a_{2}\int_{0}^{\infty}{\cos(2\pi r u) \Sigma(\mu)(r)\,dr} + b_{2}\int_{0}^{\infty}{\sin(2\pi r u) \Sigma(\mu)(r) \,dr} \\
 L(\mu)(u) &= \sqrt{u}\int_{0}^{\infty}{\sqrt{r} \Sigma(\mu)(r) K(ru) \,dr}
-\end{align*}\]
+\end{align*}$$
 
 If we assume that $\Sigma(\mu) \in L^{2}(\R)$, some additional {{< inlineNote "calculation" >}} Let $\Sigma_{1}(\mu)(r) = \Sigma(\mu)(\left| r\right|)$ and $\Sigma_{2}(\mu)(r) = -\Sigma(\mu)(\left| r \right|)$; these are just the respective even and odd extensions of $\Sigma(\mu)(r)$. Then, for $u > 0$, 
 $$\begin{align*}
@@ -71,7 +71,7 @@ $$\begin{align*}
 
 Now, the Hilbert transform ($\hat{Hf} = -i \mkern{1mu} \text{sgn}{\hat{f}}$) is an isometric mapping in $L^{2}$-norm since the Fourier transform is.
 {{< /inlineNote >}} tells us that
-\[S(\mu) = \mathcal{F}(a_{3}[\Sigma_{1}(\mu) + \iu H(\Sigma_{1}(\mu))] + b_{3}[\Sigma_{2}(\mu) + \iu H(\Sigma_{2}(\mu))])\]
+$$S(\mu) = \mathcal{F}(a_{3}[\Sigma_{1}(\mu) + \iu H(\Sigma_{1}(\mu))] + b_{3}[\Sigma_{2}(\mu) + \iu H(\Sigma_{2}(\mu))])$$
 If we suppose $s \in [\frac{n-1}{2}, \frac{n+1}{2}]$ and let $a = \frac{n+1}{2} - s$, {{< inlineNote "some inequalities yield">}} 
 $$\begin{aligned}
 |L(\mu)(u)| &= \left|\sqrt{u} \int_0^{\infty}\sqrt{r}\Sigma(\mu)(r)K(ru) \,dr\right| \\
@@ -81,7 +81,7 @@ $$\begin{aligned}
 &= \gamma(n, s)^{-1} u^{s-\frac{n+1}{2}} I_s(\mu)
 \end{aligned}$$
 {{< /inlineNote >}}
-\[\abs{L(\mu)(u)} \lesssim \gamma(n, s)^{-1} u^{s-\frac{n+1}{2}}I_{s}(\mu)\]
+$$\abs{L(\mu)(u)} \lesssim \gamma(n, s)^{-1} u^{s-\frac{n+1}{2}}I_{s}(\mu)$$
 
 ### Bounding via Plancherel's
 
@@ -151,7 +151,7 @@ If we had a particular estimate, combining it with Proposition 15.3 would yield 
 
 In the early 2000's, Wolff (in $n=2$) & Erdoğan (for $n \geq 2$) proved the following.
 **Theorem 15.5** - For all $\frac{n-2}{2} \leq s < n$, $n \geq 2$, $\epsilon > 0$ and $\mu \in \mathcal{M}(\R^{n})$ with spt$\mu \subset B(0, 1)$, we have for $r > 1$
-\[\sigma(\mu)(r) \leq C(n, s, \epsilon)r^{\epsilon - \frac{n + 2s - 2}{4}}I_{s}(\mu)\]
+$$\sigma(\mu)(r) \leq C(n, s, \epsilon)r^{\epsilon - \frac{n + 2s - 2}{4}}I_{s}(\mu)$$
 
 In the above bound, comparing the exponents, we get something along the lines of $\epsilon + \frac{n - 2s}{4} \leq \frac{1}{4} + \epsilon$. How do we know that this is sharp[^3]?
 

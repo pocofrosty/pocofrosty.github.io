@@ -1,324 +1,281 @@
 /* Custom CSS Overrides and Additions */
-
 /* Resize for smaller mobile screens */
-@media (max-width: 48em) {
-    .sidebar-about {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .sidebar-about .brand-image {
-        margin-right: 15px;
-    }
-
-    .sidebar-about img {
-        height: 140px;
-        width: 140px;
-    }
-
-    .sidebar-about h1 {
-        font-size: 1.2em;
-    }
-
-    .sidebar-about p {
-        font-size: 1em;
-    }
-
-    .sidebar-nav {
-        margin: 10px;
-        margin-bottom: 1em;
-    }
-
-    .sidebar-nav li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    .sidebar-nav li.bullet, li.sub-heading {
-        display: none;
-    }
-
-    aside.sidebar a.social, aside.sidebar p.footnote {
-        display: none;
-    }
-
-    /* Center and make sidebar sticky in mobile view */
-    aside.sidebar {
-        position: static;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        z-index: 100;
-        padding: 0;
-        max-width: 100%;
-    }
-
-    .content,
-    .container,
-    footer {
-        margin-right: 0 !important;
-        padding-right: 20px !important;
-        max-width: 100% !important;
-        width: 100% !important;
-        box-sizing: border-box;
-    }
-    #sidebar-search-form {
-    --width-of-input: 75% !important;
-  }
+ @media (max-width: 48em) {
+	 .sidebar-about {
+		 display: flex;
+		 align-items: center;
+		 justify-content: center;
+	}
+	 .sidebar-about .brand-image {
+		 margin-right: 15px;
+	}
+	 .sidebar-about img {
+		 height: 140px;
+		 width: 140px;
+	}
+	 .sidebar-about h1 {
+		 font-size: 1.2em;
+	}
+	 .sidebar-about p {
+		 font-size: 1em;
+	}
+	 .sidebar-nav {
+		 margin: 10px;
+		 margin-bottom: 1em;
+	}
+	 .sidebar-nav li {
+		 display: inline-block;
+		 margin: 0 10px;
+	}
+	 .sidebar-nav li.bullet, li.sub-heading {
+		 display: none;
+	}
+	 aside.sidebar a.social, aside.sidebar p.footnote {
+		 display: none;
+	}
+	/* Center and make sidebar sticky in mobile view */
+	 aside.sidebar {
+		 position: static;
+		 margin: 0 auto;
+		 display: flex;
+		 flex-direction: column;
+		 align-items: center;
+		 justify-content: center;
+		 width: 100%;
+		 z-index: 100;
+		 padding: 0;
+		 max-width: 100%;
+	}
+	 .content, .container, footer {
+		 margin-right: 0 !important;
+		 padding-right: 20px !important;
+		 max-width: 100% !important;
+		 width: 100% !important;
+		 box-sizing: border-box;
+	}
+	 #sidebar-search-form {
+		 --width-of-input: 75% !important;
+	}
 }
-
 /* Larger screens */
-@media (min-width: 48em) {
-    footer {
-        display: none;
-    }
-    
-    .content::-webkit-scrollbar-thumb {
-        background-color: rgb(200, 200, 200);
-        border-radius: 10px;
-    }
-
-    .content::-webkit-scrollbar-thumb:hover {
-        background-color: rgb(150, 150, 150);
-    }
+ @media (min-width: 48em) {
+	 footer {
+		 display: none;
+	}
+	 .content::-webkit-scrollbar-thumb {
+		 background-color: rgb(200, 200, 200);
+		 border-radius: 10px;
+	}
+	 .content::-webkit-scrollbar-thumb:hover {
+		 background-color: rgb(150, 150, 150);
+	}
 }
-
 /* Katex font scaling override */
-.katex {
-    font-size: 1.1em;
+ .katex {
+	 font-size: 1.1em;
 }
-
 /* Footnote styling */
-.footnote-ref::before {
-  content: "[";
+ .footnote-ref::before {
+	 content: "[";
 }
-
-.footnote-ref::after {
-  content: "]";
+ .footnote-ref::after {
+	 content: "]";
 }
-
 /* From uiverse.io by @satyamchaudharydev */
 /* removing default style of button */
-
-#sidebar-search-form button {
-  border: none;
-  background: none;
-  color: #8b8ba7;
+ #sidebar-search-form button {
+	 border: none;
+	 background: none;
+	 color: #8b8ba7;
 }
-
 /* styling of whole input container */
-#sidebar-search-form {
-  --timing: 0.3s;
-  --width-of-input: 100%;
-  --height-of-input: 40px;
-  --border-height: 2px;
-  --input-bg: #fff;
-  --border-color: #2f2ee9;
-  --border-radius: 30px;
-  --after-border-radius: 1px;
-  position: relative;
-  width: var(--width-of-input);
-  height: var(--height-of-input);
-  display: flex;
-  align-items: center;
-  padding-inline: 0.8em;
-  border-radius: var(--border-radius);
-  transition: border-radius 0.5s ease;
-  background: var(--input-bg,#fff);
-  margin-left: auto;
-  margin-right: auto;
+ #sidebar-search-form {
+	 --timing: 0.3s;
+	 --width-of-input: 100%;
+	 --height-of-input: 40px;
+	 --border-height: 2px;
+	 --input-bg: #fff;
+	 --border-color: #2f2ee9;
+	 --border-radius: 30px;
+	 --after-border-radius: 1px;
+	 position: relative;
+	 width: var(--width-of-input);
+	 height: var(--height-of-input);
+	 display: flex;
+	 align-items: center;
+	 padding-inline: 0.8em;
+	 border-radius: var(--border-radius);
+	 transition: border-radius 0.5s ease;
+	 background: var(--input-bg, #fff);
+	 margin-left: auto;
+	 margin-right: auto;
 }
 /* styling of Input */
-#sidebar-search-input {
-  font-size: 0.9rem;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  padding-inline: 0.5em;
-  padding-block: 0.7em;
-  border: none;
+ #sidebar-search-input {
+	 font-size: 0.9rem;
+	 background-color: transparent;
+	 width: 100%;
+	 height: 100%;
+	 padding-inline: 0.5em;
+	 padding-block: 0.7em;
+	 border: none;
 }
 /* styling of animated border */
-#sidebar-search-form:before {
-  content: "";
-  position: absolute;
-  background: var(--border-color);
-  transform: scaleX(0);
-  transform-origin: center;
-  width: 100%;
-  height: var(--border-height);
-  left: 0;
-  bottom: 0;
-  border-radius: 1px;
-  transition: transform var(--timing) ease;
+ #sidebar-search-form:before {
+	 content: "";
+	 position: absolute;
+	 background: var(--border-color);
+	 transform: scaleX(0);
+	 transform-origin: center;
+	 width: 100%;
+	 height: var(--border-height);
+	 left: 0;
+	 bottom: 0;
+	 border-radius: 1px;
+	 transition: transform var(--timing) ease;
 }
 /* Hover on Input */
-#sidebar-search-form:focus-within {
-  border-radius: var(--after-border-radius);
+ #sidebar-search-form:focus-within {
+	 border-radius: var(--after-border-radius);
 }
-
-#sidebar-search-input:focus {
-  outline: none;
+ #sidebar-search-input:focus {
+	 outline: none;
 }
 /* here is code of animated border */
-#sidebar-search-form:focus-within:before {
-  transform: scale(1);
+ #sidebar-search-form:focus-within:before {
+	 transform: scale(1);
 }
-
 /* sizing svg icons */
-#sidebar-search-form svg {
-  width: 17px;
-  margin-top: 3px;
+ #sidebar-search-form svg {
+	 width: 17px;
+	 margin-top: 3px;
 }
-
-.heading {
-  margin-top: 10px !important;
+ .heading {
+	 margin-top: 10px !important;
 }
-
-.sidebar {
-  padding-left: 10px !important;
-  padding-right: 10px !important
+ .sidebar {
+	 padding-left: 10px !important;
+	 padding-right: 10px !important;
 }
-
 /* Centers non-rectangular images for sidebar */
-.sidebar-about img {
-    max-width: 100%;
-    display: block;
-    border-radius: 50%;
-    object-fit: cover;
+ .sidebar-about img {
+	 max-width: 100%;
+	 display: block;
+	 border-radius: 50%;
+	 object-fit: cover;
 }
-
 /* Adjust heading sizes in sidebar about section */
-.sidebar-about h1 {
-    font-size: 1.5em;
+ .sidebar-about h1 {
+	 font-size: 1.5em;
 }
-
-.lead { 
-    font-size: 1em;
+ .lead {
+	 font-size: 1em;
 }
-
 /* Spacing adjustments for post metadata */
-.reading-time {
-    margin-left: 0.5rem;
+ .reading-time {
+	 margin-left: 0.5rem;
 }
-
-.post-date {
-    margin-right: 0.5rem;
+ .post-date {
+	 margin-right: 0.5rem;
 }
-
 /* Limit content width for better readability */
-.content {
-  max-width: 48rem;
+ .content {
+	 max-width: 48rem;
 }
-
-.article-toc ol {
-  padding-left: 20px;
+ .article-toc ol {
+	 padding-left: 20px;
 }
-
 /* Adds bullets for Recent under Sidebar */
-.sidebar-nav .bullet {
-  list-style-type: square;
-  margin-left: 1.5em;
+ .sidebar-nav .bullet {
+	 list-style-type: square;
+	 margin-left: 1.5em;
 }
-
 /* Spacing for search results */
-.search-result {
-  margin-top: 1.2rem;
+ .search-result {
+	 margin-top: 1.2rem;
 }
-
 /* Customize scrollbar for content area */
-.content.container::-webkit-scrollbar {
-  width: 3px;
+ .content.container::-webkit-scrollbar {
+	 width: 3px;
 }
-
-#sidebar-search-form button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;   /* match form height */
-  height: 40px;  /* ensures consistent sizing */
+ #sidebar-search-form button {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 40px;
+	/* match form height */
+	 height: 40px;
+	/* ensures consistent sizing */
 }
-
-#sidebar-search-form svg {
-  margin-top: 3px; /* remove the nudge */
-  width: 20px;   /* or larger if you want */
-  height: 20px;
+ #sidebar-search-form svg {
+	 margin-top: 3px;
+	/* remove the nudge */
+	 width: 20px;
+	/* or larger if you want */
+	 height: 20px;
 }
-
 /* Dark theme reading time color override */
-body.dark-theme .reading-time {
-  color: #f0ecec; /* or any color you prefer */
+ body.dark-theme .reading-time {
+	 color: #f0ecec;
+	/* or any color you prefer */
 }
-
 /*Modify the read-more-link and .seriesname to be inline */
-.post-footer {
-  display: flex;
-  align-items: flex-start;   /* aligns children to the top of the container */
-  justify-content: space-between; /* Push elements to opposite ends */
+ .post-footer {
+	 display: flex;
+	 align-items: flex-start;
+	/* aligns children to the top of the container */
+	 justify-content: space-between;
+	/* Push elements to opposite ends */
 }
-
-.post-footer .read-more-link,
-.post-footer .seriesname {
-    margin: 0;
+ .post-footer .read-more-link, .post-footer .seriesname {
+	 margin: 0;
 }
-
-.post {
-  margin-bottom: 60px;
+ .post {
+	 margin-bottom: 60px;
 }
-
-#TableOfContents {
-  margin-left: 0px !important;
+ #TableOfContents {
+	 margin-left: 0px !important;
 }
-
 /* ToC Collapsible Styling */
-#contents {
-  font-size: 1rem;        
-  font-weight: 400;       
-  line-height: 1.25;      
-  color: #222;         
-  margin: 1rem 0 .5rem 0; 
-  text-rendering: optimizeLegibility;
-
+ #contents {
+	 font-size: 1rem;
+	 font-weight: 400;
+	 line-height: 1.25;
+	 color: #222;
+	 margin: 1rem 0 .5rem 0;
+	 text-rendering: optimizeLegibility;
 }
-summary:empty::marker {
-  content: none;   /* removes the marker entirely */
+ summary:empty::marker {
+	 content: none;
+	/* removes the marker entirely */
 }
-
 /* Styling for sidenotes */
-@media screen and (min-width: 100em) {
-    .article-toc {
-        display: flex !important;
-    }
+ @media screen and (min-width: 100em) {
+	 .article-toc {
+		 display: flex !important;
+	}
 }
-
-.article-toc {
-  flex-direction: column;
-  align-items: flex-start;
-  height: 85%;
+ .article-toc {
+	 flex-direction: column;
+	 align-items: flex-start;
+	 height: 85%;
 }
-
-.article-toc ol li {
-  margin-bottom: 5px;
+ .article-toc ol li {
+	 margin-bottom: 5px;
 }
-
-.toc-wrapper {
-  margin-bottom: 20px;
-  position: relative !important; /* or just remove fixed */
+ .toc-wrapper {
+	 margin-bottom: 20px;
+	 position: relative !important;
+	/* or just remove fixed */
 }
-
-.sidenote-wrapper {
-  flex: 1;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+ .sidenote-wrapper {
+	 flex: 1;
+	 width: 100%;
+	 overflow: hidden;
+	 position: relative;
 }
-
 /* Sidenote label styling */
-:root {
+ :root {
 	 --neon-pink: #ff6ec7;
 }
  .sidenote:hover {
@@ -330,27 +287,22 @@ summary:empty::marker {
  .sidenote:hover .sidenote-content {
 	 border: dashed 3px var(--neon-pink);
 }
-
-.sidenote {
-  border-bottom: dashed 3px var(--neon-pink);
+ .sidenote {
+	 border-bottom: dashed 3px var(--neon-pink);
 }
  .sidenote-checkbox {
 	 display: none;
 }
-
-.sidenote-content {
+ .sidenote-content {
 	 display: none;
 }
-
-.sidenote-item.visible {
-  display: block;
+ .sidenote-item.visible {
+	 display: block;
 }
-
-.sidenote-item {
-  position: absolute;
-  display: none;
+ .sidenote-item {
+	 position: absolute;
+	 display: none;
 }
-
 /* Sidenote inline only */
  @media screen and (max-width: 100em) {
 	 .sidenote-content {
@@ -359,18 +311,17 @@ summary:empty::marker {
 		 margin-bottom: 10px;
 		 width: 100%;
 		 display: none;
+		 padding: 20px;
 	}
-	 .sidenote-checkbox:checked ~ .sidenote-content {
+	 .sidenote-checkbox:checked~.sidenote-content {
 		 display: block;
 	}
-
-  .sidenote-item {
-    display: none !important
-  }
+	 .sidenote-item {
+		 display: none !important;
+	}
 }
-
 /* Inline label styling */
-:root {
+ :root {
 	 --gold: #e8be33;
 }
  .inline:hover {
@@ -382,64 +333,55 @@ summary:empty::marker {
  .inline .inline-content {
 	 border: dashed 3px var(--gold);
 }
-
-.inline {
-  border-bottom: dashed 3px var(--gold);
+ .inline {
+	 border-bottom: dashed 3px var(--gold);
 }
  .inline-checkbox {
 	 display: none;
 }
-
-.inline-item {
-  position: absolute;
-  display: none;
+ .inline-item {
+	 position: absolute;
+	 display: none;
 }
-
-.inline-content {
-  position: static;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 100%;
-	display: none;
+ .inline-content {
+	 position: static;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 100%;
+	 display: none;
+	 padding: 20px;
 }
-
-.inline-checkbox:checked ~ .inline-content {
- display: block;
+ .inline-checkbox:checked~.inline-content {
+	 display: block;
 }
-
-.inline-item {
-  display: none !important;
+ .inline-item {
+	 display: none !important;
 }
-
 /* Footnote image styling */
-.footnotes li img {
-  max-width: 50%;
-  height: auto;
-  display: inline-block;
-  vertical-align: top;
+ .footnotes li img {
+	 max-width: 50%;
+	 height: auto;
+	 display: inline-block;
+	 vertical-align: top;
 }
-
-.footnotes li {
-  list-style-position: outside;
+ .footnotes li {
+	 list-style-position: outside;
 }
-
-.footnotes li:has(img) {
-  list-style-position: outside;
+ .footnotes li:has(img) {
+	 list-style-position: outside;
 }
-
 /* Code Block Styling */
-pre {
-  overflow-x: auto;
+ pre {
+	 overflow-x: auto;
 }
-
-.highlight {
-  margin-left: 0;
-  margin-right: 0;
+ .highlight {
+	 margin-left: 0;
+	 margin-right: 0;
 }
-
-.highlight figcaption span {
-  background-color: purple; /* or a custom color */
-  color: #fff;
-  padding: 0.25em 0.5em;
-  border-radius: 3px;
+ .highlight figcaption span {
+	 background-color: purple;
+	/* or a custom color */
+	 color: #fff;
+	 padding: 0.25em 0.5em;
+	 border-radius: 3px;
 }
