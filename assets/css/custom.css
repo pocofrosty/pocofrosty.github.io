@@ -212,7 +212,7 @@
 
 /* Limit content width for better readability */
 .content {
-  max-width: 40rem;
+  max-width: 48rem;
 }
 
 .article-toc ol {
