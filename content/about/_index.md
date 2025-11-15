@@ -3,10 +3,10 @@ title: About
 date: 2025-01-27
 draft: false
 layout: single
-slug: ""
+slug: 
 ---
 
-# About Darren Zheng
+## About Darren Zheng
 
 Hello! I'm Darren Zheng, a recent graduate from the University of Pennsylvania (2025), where I earned a B.A. in Mathematics and statistics minor. My primary mathematical interests are in low-dimensional topology, functional analysis and geometric measure theory.
 
@@ -29,4 +29,4 @@ TBA
 
 This website is built with [Hugo](https://gohugo.io/) and uses the [Poison theme](https://github.com/lukeorth/poison). More specific details about how I set up the site can be found [here]({{< ref "Setting up a Personal Website with Hugo" >}}).
 
-Thanks for visiting, and I hope you find the content here interesting and useful! 
+Thanks for visiting, and I hope you find the content here interesting and useful!
