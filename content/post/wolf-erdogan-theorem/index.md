@@ -1,14 +1,12 @@
 ---
 title: Wolf-Erdoğan Theorem
-summary: ""
-date: 2025-11-05T05:57:13.256Z
-preview: ""
+summary: 
+date: 2025-11-05T05:57:13+00:00
+preview: 
 draft: false
-tags: []
-series: ""
+series: 
 ---
 
-## The Problem Set-up
 Falconer's Conjecture asks if
 $$\dim{A} > \frac{n}{2} \text{ implies } \mathcal{L}^{1}(D(A)) > 0$$
 From Theorem 4.6 in [Mattila][], we already have seen that for a Borel set $A \subset \R^{n}$, we get a positive Lebesgue measure of the distance set whenever $\dim{A} > \frac{n}{2} + \frac{1}{2}$[^1]. We can address the gap in the hypothesis via the following theorem.
