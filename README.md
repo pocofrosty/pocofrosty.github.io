@@ -1,3 +1,3 @@
 # Blog for Darren Zheng
-To-Do:
-[]- Think about color scheme
+TO-DO List: 
+1. [ ] Think about more consistent global color scheme
