@@ -2,11 +2,10 @@
 title: Wolf-Erdoğan Theorem
 date: 2025-11-05T05:57:13+00:00
 draft: false
-summary: null
-preview: null
+summary: "null"
+featuredImage: null
 series: null
 ---
-
 ## The Problem Set-up
 Falconer's Conjecture asks if
 $$\dim{A} > \frac{n}{2} \text{ implies } \mathcal{L}^{1}(D(A)) > 0$$

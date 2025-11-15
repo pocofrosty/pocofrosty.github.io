@@ -389,3 +389,17 @@
 .container.sidebar-sticky {
   	margin: 0 auto;
 }
+
+/* Adjusting the font sizes for h1-h6 elements */
+body.dark-theme .post h2, 
+body.dark-theme .post h3 {
+  text-decoration: underline;
+  color: orange;
+}
+
+/* Remove the color for light mode */
+.post h2, 
+.post h3 {
+  text-decoration: underline;
+  color: #1E1E1E;
+}

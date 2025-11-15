@@ -10,13 +10,13 @@ Lately, I have been reorganizing some of my past work scattered across many pape
 - [Collection of Hugo Themes](https://themes.gohugo.io/)
 - [CloudCannon Beginner Tutorial](https://cloudcannon.com/tutorials/hugo-beginner-tutorial/)
 
-# Why Hugo?
+## Why Hugo?
 
 Static site generators (SSG) are very popular options for personal websites in recent years. Their low floor and high ceiling let those with a range of programming experience customize easily. I choose Hugo due to its build speed (sporting build time in the milliseconds!) and theme ecosystem. I felt that writing articles in markdown was also very natural, coming from a LaTeX background.
 
 For those with some familiarity with other static site generators, I found this [note](https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81) that described the way Hugo works really helpful.
 
-# Choosing a Theme
+## Choosing a Theme
 
 Part of the strengths of any well-developed SSG is the community support. Thankfully, Hugo has been around for a number of years, meaning users have a bunch of open-source themes. I selected the Poison theme as a professional template, but below are some other ones worth checking out in my opinion.
 
@@ -28,7 +28,7 @@ Part of the strengths of any well-developed SSG is the community support. Thankf
 
 It's important when selecting a theme to look at the config file; this will usually tell you how much control you have over the styling of the site and how you can organize your content. 
 
-# Implementing LaTeX support via KaTeX
+## Implementing LaTeX support via KaTeX
 
 As a mathematician, LaTeX typesetting was a must for writing some future posts. Luckily, there are two major libraries that support math rendering (See MathJax and KaTeX). I ended up choosing KaTeX for no particular reason. Implementing this server-side was as simple as including a couple of lines of HTML and a custom render hook.
 
@@ -50,7 +50,7 @@ Don't forget to include the following style-sheet in the head of your project!
 Importantly, I prefer to use `$$...$$` and `$...$` as my delimiters for block and inline.
 
 
-# Comments System using Giscus
+## Comments System using Giscus
 
 Hugo Documentation notes that it comes shipped with Disqus, a javascript-based commenting system. However, I'd recommend not using it since:
 
@@ -64,47 +64,47 @@ I settled on [Giscus](https://giscus.app/), itself heavily inspired by the earli
 
 For my page, I choose to use the Catppuccin Frappe and Catppuccin Latte themes for dark and light mode respectively.
 
-# Light & Dark Mode
+## Light & Dark Mode
 
 Speaking of which, the Poison theme already implements a Light/Dark mode switch. You can see how I overrode some of the behavior and synced it up with my Giscus theme in the `assets\js\light_dark.js` at my GitHub repository for this site.
 
-# Pagefind Static Search
+## Pagefind Static Search
 
 Pagefind is a static search package that builds an index after your static site is finished building. It was easy to set-up and customize. Pagefind comes a pre-designed search bar to easily drop into your site, but I choose to build my own using their API to have greater styling control and customization.
 
-# GitHub-style Alerts (hugo-admonitions)
+## GitHub-style Alerts (hugo-admonitions)
 
-# Table of Contents
+## Table of Contents
 
 Hugo comes with a built-in Table of Contents method. It works by detecting `<h1>`-`<h6>` elements and generating it based on that. The bolded entry in the table of contents represents the items that most recently entered the viewfinder. This leads to some finicky behavior using the ScrollSpy functionality of mdo's Poison Theme.
 
-# Sidenotes via Intersection Observer
+## Sidenotes via Intersection Observer
 
 Sidenotes are an alternative to footnotes. Since it may break up the reader's flow when it redirects their eyes to the bottom of the page, requiring another click to return. As an alternative to footnotes, I wanted sidenotes to be textual snippets that are located in horizontal alignment with the corresponding label in the text. We allow sidenotes to optionally accept 1 image and sidenotes disappear as the label is moved out of the viewport.
 
-# Inline Notes
+## Inline Notes
 
 Inline notes are very similar to Sidenotes, except they can only generate, as their name suggests, inline. These are collapsible elements regardless of the window size. They replicate the mobile-view behavior of Sidenotes.
 
-# GitJournal Mobile Publishing
+## GitJournal Mobile Publishing
 
 Occasionally, I want to be able to edit content on my phone. I found that GitJournal was an okay option as an Android user.
 
-# Daily Website Refresh via CRON Job
+## Daily Website Refresh via CRON Job
 
-# Mobile View
+## Mobile View
 
-# Faster Loading using InstantPage
+## Faster Loading using InstantPage
 
-# Caching using Google WorkBox + ServiceWorkers
+## Caching using Google WorkBox + ServiceWorkers
 
 Service Workers are attached to 
 
-# Favicons
+## Favicons
 
-# Deployment via GitHub Pages
+## Deployment via GitHub Pages
 
-# Content Management System (CMS)
+## Content Management System (CMS)
 
 I settled on Giscus, itself heavily inspired by the earlier utterances package. Comments are stored as part of the GitHub Repository's discussions page. The biggest con is that it requires an account to post. Since I don't expect much traffic on my site or GitHub repo, I thought this was fair trade-off. Anyways, for those without an account, they could reach me through my email.
 For VSCode users, I'd recommend FrontmatterCMS, or DecapCMS. The first has a easy-to-use in-application GUI, although I found some customization options lacking. DecapCMS is incredibly popular, but the initial configuration can take a lot of time.

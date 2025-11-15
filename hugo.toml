@@ -4,6 +4,7 @@ languageCode = 'en-us'
 title = 'Darren Zheng'
 RelativeURLs=true
 CanonifyURLs=true
+enableEmoji = true
 
 # Disable taxonomy pages for categories and tags
 disableKinds = ["taxonomy"]
@@ -102,7 +103,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   date_color = "#515151"                  # default is #515151
   link_color = "#268BD2"                  # default is #268BD2
   list_color = "#222"                  # default is #5A5A5A
-  post_title_color = "#303030"            # default is #303030
+  post_title_color = "#1E1E1E"            # default is #303030
   table_border_color = "#E5E5E5"          # default is #E5E5E5
   table_stripe_color = "#F9F9F9"          # default is #F9F9F9
   text_color = "#222"                     # default is #222
@@ -115,12 +116,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
   content_bg_color_dark = "#323339"               # default is #121212
   date_color_dark = "#f0ececff"                     # default is #9A9A9A
   link_color_dark = "#3A86FF"                     # default is #268BD2
-  list_color_dark = "#EAEAEA"                     # default is #9D9D9D
-  post_title_color_dark = "#e0e0e0"               # default is #DBE2E9
+  list_color_dark = "#e0e0e0"                     # default is #9D9D9D
+  post_title_color_dark = "#FFA500"               # default is #DBE2E9
   table_border_color_dark = "#515151"             # default is #515151
   table_stripe_color_dark = "#202020"             # default is #202020
-  text_color_dark = "#EAEAEA"                        # default is #EEE
-  
+  text_color_dark = "#e0e0e0"                        # default is #EEE
+
   # Giscus comments settings
   [params.giscus]
     enable = true
