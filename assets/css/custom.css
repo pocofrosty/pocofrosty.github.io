@@ -414,3 +414,7 @@ body.dark-theme .post h3 {
   font-size: 1em;
   margin-left: 0.25em;
 }
+
+.sidebar-nav {
+	margin-top: 1.5rem;
+}
