@@ -95,3 +95,4 @@ bower_components
 #Obsidian settings
 .obsidian/
 .obsidian/*
+preamble.md
