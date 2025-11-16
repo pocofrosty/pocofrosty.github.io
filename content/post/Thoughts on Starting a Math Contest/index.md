@@ -7,7 +7,7 @@ title: Thoughts on Starting a Math Contest
 summary: hello
 ---
 
-In this post, I wanted to record some of my thoughts about the early days of starting Penn Math Contest, an undergraduate club I started with a close friend during my freshman year of university.
+In this post, I wanted to record some of my thoughts about the early days of starting Penn Math Contest, an undergraduate club I started with a close friend during my freshman year of university. I cofounded the club in my first year with a fellow freshmen Eric Tao.
 
 
 
