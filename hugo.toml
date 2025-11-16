@@ -55,7 +55,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 #Theme Specific Settings
 [params]
   brand = "Darren Zheng"
-  description = "Personal website of Darren Zheng"
+  description = "Personal Blog"
   dark_mode = false
   brand_image = "/images/profile-professional.jpg"    # path to the image shown in the sidebar
   # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
@@ -72,6 +72,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   menu = [
     {Name = "Home", URL = "/", HasChildren = false},
     {Name = "About", URL = "/about/", HasChildren = false},
+    {Name = "Projects", URL = "/projects/", HasChildren = false},
     {Name = "Posts", URL = "/post/", HasChildren = true, Limit = 5},
   ]
   
@@ -121,6 +122,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
   table_border_color_dark = "#515151"             # default is #515151
   table_stripe_color_dark = "#202020"             # default is #202020
   text_color_dark = "#e0e0e0"                        # default is #EEE
+
+  
+  # More RSS settings  
+  [params.author]
+    email = 'dzheng24@sas.upenn.edu'
+    name = 'Darren Zheng'
 
   # Giscus comments settings
   [params.giscus]

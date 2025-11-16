@@ -1,17 +1,17 @@
 ---
-title: Wolf-Erdoğan Theorem
+title: Wolff-Erdoğan Theorem
 date: 2025-11-05T05:57:13+00:00
 draft: false
-summary: "null"
+summary: Explores an intermediate result towards solving Falconer's Conjecture, which establishes a lower bound of $\frac{n}{2} + \frac{1}{3}$
 featuredImage: null
 series: null
 ---
 ## The Problem Set-up
 Falconer's Conjecture asks if
 $$\dim{A} > \frac{n}{2} \text{ implies } \mathcal{L}^{1}(D(A)) > 0$$
-From Theorem 4.6 in [Mattila][], we already have seen that for a Borel set $A \subset \R^{n}$, we get a positive Lebesgue measure of the distance set whenever $\dim{A} > \frac{n}{2} + \frac{1}{2}$[^1]. We can address the gap in the hypothesis via the following theorem.
+From Theorem 4.6 in [Mattila][], we already have seen that for a Borel set $A \subset \R^{n}$, we get a positive Lebesgue measure of the distance set whenever $\dim{A} > \frac{n}{2} + \frac{1}{2}$.[^1] We can address the gap in the hypothesis via the following theorem.
 
-**Theorem 15.1** (Wolf-Erdoğan Distance Set Theorem): Let $A \subset \R^{n}$ be a Borel set and $n \geq 2$. 
+**Theorem 15.1** (Wolff-Erdoğan Distance Set Theorem): Let $A \subset \R^{n}$ be a Borel set and $n \geq 2$. 
 
 1. If $\dim A > \frac{n}{2} + \frac{1}{3}$, then $\mathcal{L}^{1}(D(A)) > 0$.
 2. If we are in the intermediate case of $\frac{n}{2} \leq \dim{A} \leq \frac{n}{2} + \frac{1}{3}$, then $\dim{D(A)} \geq \frac{6\dim{A}+2-3n}{4}$. 
@@ -151,7 +151,7 @@ In the early 2000's, Wolff (in $n=2$) & Erdoğan (for $n \geq 2$) proved the fol
 **Theorem 15.5** - For all $\frac{n-2}{2} \leq s < n$, $n \geq 2$, $\epsilon > 0$ and $\mu \in \mathcal{M}(\R^{n})$ with spt$\mu \subset B(0, 1)$, we have for $r > 1$
 $$\sigma(\mu)(r) \leq C(n, s, \epsilon)r^{\epsilon - \frac{n + 2s - 2}{4}}I_{s}(\mu)$$
 
-In the above bound, comparing the exponents, we get something along the lines of $\epsilon + \frac{n - 2s}{4} \leq \frac{1}{4} + \epsilon$. How do we know that this is sharp[^3]?
+In the above bound, comparing the exponents, we get something along the lines of $\epsilon + \frac{n - 2s}{4} \leq \frac{1}{4} + \epsilon$. How do we know that this is sharp?[^3]
 
 ## Sketching How to Prove Wolff-Erdoğan in dimension 2
 We can prove an almost equivalent result.
@@ -175,7 +175,7 @@ Since there are only $\lesssim \log{r}$ values for $k$, we only need to bound ea
 $$\int\left|\widehat{f}_I \widehat{f}_J\right| d \mu \lesssim r^{\varepsilon+(3 n-2 s-2) / 4}\left\|f_I\right\|_2\left\|f_J\right\|_2$$
 {{< /inlineNote >}}
 
-For some visual references, see [^4] and [^5].
+For some visual references, see here[^4] and here.[^5]
 
 ### A Double Decomposition
 
