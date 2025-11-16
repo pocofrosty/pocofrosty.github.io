@@ -133,7 +133,9 @@ Sidenotes are an alternative to footnotes and created as a Hugo shortcode. Since
 
 ## Mobile Publishing
 
-Since I want to be able to edit content on my phone, I looked for an Android-based markdown editor with GitHub sync support. I settled on [GitJournal](https://gitjournal.io/), although the app does not seem to be in active development. I haven't run into many issues, but would recommend anything that works for you.
+Since I want to be able to edit content on my phone, I looked for an Android-based markdown editor with GitHub sync support. I initially used [GitJournal](https://gitjournal.io/), but the app does not seem to be in active development. I disliked the syncing issues and it just seems I was running into more problems as I tried to fix them. Additionally, the relatively high cost put me off the app. 
+
+Instead, as of November 2025, I've switched over to using [GitSync](https://github.com/ViscousPot/GitSync) and [Obsidian](https://obsidian.md/) for mobile writing. So far, it seems to work well, and I'm considering transitioning more of my note-taking ecosystem towards the Obsidian framework (Unfortunately at the moment, my notes are scattered across my [reMarkable 2](https://remarkable.com/) tablet + paper + LaTeX).
 
 ## Daily Website Refresh via CRON Job for Scheduled Posts
 
