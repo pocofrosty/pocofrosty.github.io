@@ -9,14 +9,14 @@ series:
 ## The Problem Set-up
 Falconer's Conjecture  asks if
 $$\dim{A} > \frac{n}{2} \text{ implies } \mathcal{L}^{1}(D(A)) > 0$$
-From Theorem 4.6 in [Mattila][https://www.cambridge.org/core/books/fourier-analysis-and-hausdorff-dimension/78A25BED2C6E4F9B911971305DC928B0], we already have seen that for a Borel set $A \subset \R^{n}$, we get a positive Lebesgue measure of the distance set whenever $\dim{A} > \frac{n}{2} + \frac{1}{2}$.[^1] We can address the gap in the hypothesis via the following theorem. 
+From Theorem 4.6 in [Mattila][], we already have seen that for a Borel set $A \subset \R^{n}$, we get a positive Lebesgue measure of the distance set whenever $\dim{A} > \frac{n}{2} + \frac{1}{2}$.[^1] We can address the gap in the hypothesis via the following theorem. 
 
 **Theorem 15.1** (Wolff-Erdoğan Distance Set Theorem): Let $A \subset \R^{n}$ be a Borel set and $n \geq 2$. 
 
 1. If $\dim A > \frac{n}{2} + \frac{1}{3}$, then $\mathcal{L}^{1}(D(A)) > 0$.
 2. If we are in the intermediate case of $\frac{n}{2} \leq \dim{A} \leq \frac{n}{2} + \frac{1}{3}$, then $\dim{D(A)} \geq \frac{6\dim{A}+2-3n}{4}$. 
 
-We aim to summarize the treatment given in Chapters 15 and 16 of [Mattila][https://www.cambridge.org/core/books/fourier-analysis-and-hausdorff-dimension/78A25BED2C6E4F9B911971305DC928B0]. Further details may be found there.
+We aim to summarize the treatment given in Chapters 15 and 16 of [Mattila][]. Further details may be found there.
 
 ### Definitions
 We can define the quadratic spherical averages of a measure $\mu \in \mathcal{M}(\R^{n})$ for $r > 0$ by
@@ -205,7 +205,7 @@ $$\mathcal{L}^{2}((-\hat{A}_{r}(I) + x) \cap \hat{A}_{r}(J)) \lesssim 2^{k}$$
 
 {{< /inlineNote >}}, $$\int\left|\widehat{f_{I, P}} \widehat{f_{J, P}}\right|^2 \lesssim 2^k \int\left|f_{I, P}\right|^2 \int\left|f_{J, P}\right|^2$$
 
-If the reader wants more rigor, they are encouraged to look at Page 204 of [Mattila][https://www.cambridge.org/core/books/fourier-analysis-and-hausdorff-dimension/78A25BED2C6E4F9B911971305DC928B0].
+If the reader wants more rigor, they are encouraged to look at Page 204 of [Mattila][].
 
 The proof for $n > 2$ requires a "deep bilinear estimates" that won't be discussed until Chapter 25. 
 
@@ -216,9 +216,11 @@ $$\mu(B_{q}(x)) \leq q^{s} \text{ for all } x \in \R^{n}, q > 0 \implies I_{t}(\
 
 On the other hand, it does not yet show Theorem 15.5, since finite measures may not yield uniform bounds on the growth of balls. How can we solve this problem? We break it into cases by assuming that $\mu(B_{q}(x)) \leq q^{s}$ for $q \geq \frac{1}{r}$. Then, for all other $q < \frac{1}{r} \iff r < \frac{1}{q}$, we try to decompose into $\log{r}$ number of measures with the $g \geq \frac{1}{r}$ condition. Then, some summation estimation yields the desired result.
 
+[Mattila]: https://www.cambridge.org/core/books/fourier-analysis-and-hausdorff-dimension/78A25BED2C6E4F9B911971305DC928B0
+
 [^1]: Above, and for the rest of this blog post, $\dim{A}$ represents the Hausdorff measure of $A$ 
 
-[^2]: In fact, this proves Falconer's Conjecture in the case of Borel Salem sets. ![](whitney_decomposition.png)
+[^2]: In fact, this proves Falconer's Conjecture in the case of Borel Salem sets.
 
 [^3]: We can look at the counterexamples given on Page 209. 
 
