@@ -1,6 +1,0 @@
----
-date: "2025-11-16"
-draft: true
-title: "index"
-summary:
----
