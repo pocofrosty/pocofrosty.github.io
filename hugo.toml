@@ -78,7 +78,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   
   # Social links (comment out any you don't use)
   email_url = "mailto://dzheng24@sas.upenn.edu"
-  github_url = "https://github.com/pocofrosty"
+  github_url = "https://github.com/darrenzheng24"
   linkedin_url = "https://www.linkedin.com/in/darrenzheng24/"
   
   # RSS configuration

@@ -7,7 +7,7 @@ layout: single
 
 ## Projects
 
-Welcome to my projects page. Here you'll find a collection of my work and personal projects.
+Welcome to my projects page. Here you'll find a collection of my work and personal projects. 
 
 ## Featured Projects
 

@@ -21,6 +21,10 @@
   <!-- favicon -->
   {{ partial "head/favicon.html" . }}
 
+  <!-- KaTeX CSS version 16.25-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css" integrity="sha384-WcoG4HRXMzYzfCgiyfrySxx90XSl2rxY5mnVY5TwtWE6KLrArNKn0T/mOgNL0Mmi" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.js" integrity="sha384-J+9dG2KMoiR9hqcFao0IBLwxt6zpcyN68IgwzsCSkbreXUjmNVRhPFTssqdSGjwQ" crossorigin="anonymous"></script>
+
   <!-- Service Worker -->
   {{- $js := resources.Get "service-worker.js" }}
   {{- $js = $js | js.Build | minify | fingerprint }}
