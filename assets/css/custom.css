@@ -316,6 +316,7 @@
 		 width: 100%;
 		 display: none;
 		 padding: 20px;
+		 overflow-x: auto;
 	}
 	 .sidenote-checkbox:checked~.sidenote-content {
 		 display: block;
@@ -354,6 +355,7 @@
 	 width: 100%;
 	 display: none;
 	 padding: 20px;
+	 overflow-x: auto;
 }
  .inline-checkbox:checked~.inline-content {
 	 display: block;
@@ -447,4 +449,44 @@ html {
 
 .content.container {
 	font-size: 19px;
+}
+
+/* Adjust posts list when on smaller screen */
+@media (max-width: 48em) {
+	.entries .post-list {
+		font-size: 0;
+	}
+	
+	.entries .post-list::after {
+		content: attr(shortenedtime);
+		font-size: 1rem;
+	}
+
+	.entries .title {
+		white-space: nowrap;
+		overflow: hidden;
+		max-inline-size: 70%;
+	}
+}
+
+/* adjust the overflow of post list */
+.entries .title {
+	white-space: wrap;
+	display: inline-block;
+	max-inline-size: 70%;
+}
+
+/* Remove top margin from the first h2 in a post */
+.post > h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Adjust spacing for footer and comments */
+.footer > p {
+	margin-bottom: 0.5rem;
+}
+
+/* Remove part of the top margin from comments section */
+.comments {
+	margin-top: 0px;
 }

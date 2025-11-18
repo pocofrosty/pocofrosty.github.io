@@ -5,6 +5,8 @@ title = 'Darren Zheng'
 RelativeURLs=true
 CanonifyURLs=true
 enableEmoji = true
+enableGitInfo=true
+enableRobotsTXT = true
 
 # Disable taxonomy pages for categories and tags
 disableKinds = ["taxonomy"]
