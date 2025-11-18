@@ -67,3 +67,14 @@ if (tableOfContentsDropdown) {
         }, 0);
     });
 }
+
+// Force scroll events to also apply to a specific container
+const scrollable = document.querySelector('.content.container');
+const toc = document.querySelector('.article-toc');
+
+if (scrollable && toc) {
+    toc.addEventListener('wheel', (e) => {
+    e.preventDefault(); // prevent default page scroll
+    scrollable.scrollTop += e.deltaY; // apply scroll to container
+    }, { passive: false });
+}
