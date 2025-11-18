@@ -1,0 +1,53 @@
+---
+title: "Projects"
+date: 2024-01-01
+draft: false
+layout: single
+---
+Listed below are some of my past projects.  
+
+## Directed Reading Program Final Presentations/Write-ups
+{{< details summary="Knot Invariants using Algebraic Topology (Fall 2022)" class="DRP">}}
+**Mentor:** Yi Wang  
+
+**Description:** We hope to study some of the theory in the fields of topology and knot theory. In particular, the study of classifying and invariants used to distinguish spaces/knots. We begin the semester with a survey of standard techniques using Topology of Surfaces by L. Christine Kinsey and The Knot Book by Colin Adams. We will end it by reading the first chapters of Hyperbolic Knot Theory by Jessica Purcell.  
+
+**Presentation:** [The Figure-Eight Knot](DRP-files/figure%20eight%20knot.pdf)
+{{< /details >}}
+{{< details summary="Understanding Generating Functions (Spring 2023)" class="DRP">}}
+**Mentor:** Xinxuan (Jennifer) Zhang  
+
+**Description:** The goal of this project is to see the widespread use of generating functions in counting particularly difficult sequences that may not have a closed form. In many cases, the generating functions captures a lot of information. We will begin the semester by studying general combinatorial principles and tools using "The Art of Counting" by Bruce Sagan. Afterwards, we will focus more on generating functions and specific examples of their use in combinatorics, such as rook polynomials. We seek to understand generating functions more rigorously and how to manipulate them. After a few chapters, we will switch to select sections of Enumerative Combinatorics, Vol. 1 by Richard Stanley.  
+
+**Presentation:** [Generating Functions](DRP-files/an%20introduction%20to%20generating%20functions.pdf)
+{{< /details >}}
+{{< details summary="Pontryagin Duality of LCA Groups (Fall 2023)" class="DRP">}}
+**Mentor:** Travis Leadbetter  
+
+**Description:** Both the discrete and real Fourier transforms have many applications, drawing from a rich theory. In this write-up, we will discuss a generalization of the Fourier transform onto locally compact abelian groups, introducing techniques in abstract harmonic analysis. We begin by talking about what it means to integrate over a group before constructing the general Haar measure. We will prove Pontryagin duality and finish by discussing some consequences of this result.  
+
+**Write-up:** [Pontryagin Duality of LCA Groups](DRP-files/pontryagin%20duality%20on%20LCA%20groups.pdf)
+{{< /details >}}
+{{< details summary="The Distinct Distances Problem (Spring 2024)" class="DRP">}}
+**Mentor:** Jae Ho Choi  
+
+**Description:** Suppose you were given n points to place in a plane. What is the minimum size of the set of distances between each pair of points? Despite the simple set-up, the bounding of this and related distance set problems, such as Falconer's conjecture, are generally difficult. We seek to understand some of the tools used to tackle them by reading through a paper "On the Erdős distinct distances problem in the plane" by Guth & Katz and assorted texts to get the necessary background.  
+
+**Write-up:** [Distinct Distances Problem](DRP-files/distinct%20distances%20problem.pdf)
+{{< /details >}}
+{{< details summary="Besicovitch Sets & Hausdorff Dimension (Fall 2024)" class="DRP">}}
+**Mentor:** Hunter Stufflebeam  
+
+**Description:** Let S be a set that contains a line in every direction. How small can S be? What
+do we mean by small sets in mathematics? This write-up seeks to construct these special sets and
+demonstrate some surprising properties.  
+
+**Write-up:** [Besicovitch Sets](DRP-files/besicovitch%20sets.pdf)
+{{< /details >}}
+{{< details summary="Studying Mapping Class Groups using Dehn Twists (Spring 2025)" class="DRP">}}
+**Mentor:**  Ellis Buckminster  
+
+**Description:** Mapping groups are a tool from algebraic topology that allows us to study certain topological spaces. This talk will explore how we can use Dehn Twists, a simple type of homeomorphism, to classify mapping class groups.  
+
+**Presentation:** [Dehn Twists](DRP-files/dehn%20twists.pdf)
+{{< /details>}}

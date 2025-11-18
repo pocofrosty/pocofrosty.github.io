@@ -39,7 +39,7 @@ if (workbox) {
       cacheName: 'post-pages-cache',
       plugins: [
         new workbox.expiration.ExpirationPlugin({
-          maxAgeSeconds: 7 * 24 * 60 * 60, // 7 day
+          maxAgeSeconds: 2 * 24 * 60 * 60, // 2 day
         }),
         fallbackPlugin,
       ],
@@ -53,7 +53,7 @@ if (workbox) {
       cacheName: 'css-js-resources-cache',
       plugins: [
         new workbox.expiration.ExpirationPlugin({
-          maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+          maxAgeSeconds: 2 * 24 * 60 * 60, // 2 days
         }),
       ],
     })
@@ -66,7 +66,20 @@ if (workbox) {
       cacheName: 'image-resources-cache',
       plugins: [
         new workbox.expiration.ExpirationPlugin({
-          maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+          maxAgeSeconds: 2 * 24 * 60 * 60, // 2 days
+        }),
+      ],
+    })
+  );
+
+  // Serve PDF files with Cache First strategy
+  workbox.routing.registerRoute(
+    ({ url }) => url.pathname.endsWith('.pdf'),
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: 'pdf-resources-cache',
+      plugins: [
+        new workbox.expiration.ExpirationPlugin({
+          maxAgeSeconds: 2 * 24 * 60 * 60, // 2 days
         }),
       ],
     })
@@ -79,7 +92,7 @@ if (workbox) {
       cacheName: 'font-resources-cache',
       plugins: [
         new workbox.expiration.ExpirationPlugin({
-          maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+          maxAgeSeconds: 2 * 24 * 60 * 60, // 2 days
         }),
       ],
     })

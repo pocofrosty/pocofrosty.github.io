@@ -11,6 +11,9 @@ disableKinds = ["taxonomy"]
 
 ignoreLogs = ['warning-goldmark-raw-html']
 
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

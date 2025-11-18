@@ -125,7 +125,7 @@ Hugo uses [goldmark](https://github.com/yuin/goldmark) as its markdown renderer.
 
 ## Sidenotes via Intersection Observer
 
-Sidenotes are an alternative to footnotes and created as a Hugo shortcode. Since it may break up the reader's flow when it redirects their eyes to the bottom of the page, requiring another click to return. As an alternative to footnotes, I wanted sidenotes to be textual snippets that are located in horizontal alignment with the corresponding label in the text. We allow {{< sidenote "sidenotes" >}} Hello there :wave:! {{< /sidenote >}}to optionally accept one image and sidenotes disappear as the label is moved out of the viewport.
+Sidenotes are an alternative to footnotes and created as a Hugo shortcode. Since it may break up the reader's flow when it redirects their eyes to the bottom of the page, requiring another click to return. As an alternative to footnotes, I wanted sidenotes to be textual snippets that are located in horizontal alignment with the corresponding label in the text. We allow {{< sidenote "sidenotes" >}} Hello there! {{< /sidenote >}}to optionally accept one image and sidenotes disappear as the label is moved out of the viewport.
 
 ## Inline Notes
 
@@ -182,3 +182,10 @@ We can use a CSS selector to add an SVG icon after links.
 ```
 
 The icons are taken from [Simple Icons](https://simpleicons.org/). The emojis are enabled by adding `enableEmoji = true` to your config file. A full list of supported emojis are [here](https://github.com/ikatyang/emoji-cheat-sheet/).
+
+## RSS Feed
+
+Hugo automatically generates an RSS feed. I replaced the link using [Subscribe Openly](https://subscribeopenly.net/) to make it more digestible.
+
+## Embeddable PDFs
+Embedded PDF files may be viewed differently across browsers. To standardize this, I've used this [pdfjs viewer element](https://github.com/alekswebnet/pdfjs-viewer-element) directly.

@@ -418,3 +418,33 @@ body.dark-theme .post h3 {
 .sidebar-nav {
 	margin-top: 1.5rem;
 }
+
+.DRP > summary{
+	box-sizing: border-box;
+	background-color: #D3E298;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+body.dark-theme .DRP > summary {
+    background-color: #3e5642; /* Replace with your desired color */
+}
+
+.DRP[open]> summary {
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid #1E1E1E;
+}
+
+.DRP {
+	border: 1px solid #1E1E1E;
+	border-radius: 10px;
+}
+
+/* Controls base font size */
+html {
+	font-size: 18px;
+}
+
+.content.container {
+	font-size: 19px;
+}

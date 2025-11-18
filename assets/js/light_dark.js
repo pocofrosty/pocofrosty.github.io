@@ -26,6 +26,15 @@ function applyTheme(theme) {
             giscus: { setConfig: { theme: theme === "catppuccin_frappe" ? "catppuccin_frappe" : "catppuccin_latte" } }
         }, "https://giscus.app");
     }
+    // Update PDF.js viewer theme
+    updatePDFJSViewerTheme(theme);
+}
+
+function updatePDFJSViewerTheme(theme) {
+    const pdfViewer = document.querySelector('pdfjs-viewer-element');
+    if (pdfViewer) {
+        pdfViewer.setAttribute("viewer-css-theme", theme === "catppuccin_frappe" ? "DARK" : "LIGHT");
+    }
 }
 
 function loadGiscus() {
