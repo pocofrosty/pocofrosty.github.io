@@ -3,16 +3,18 @@ title: "Projects"
 date: 2024-01-01
 draft: false
 layout: single
+readingtime: false
 ---
 Listed below are some of my past projects.  
 
 ## Undergraduate Thesis
-{{< details summary="Morse Functions on Grassmannian Manifolds " class="DRP">}}
+{{< details summary="Intrinsic Morse Functions on Grassmannians" class="DRP">}}
 **Advisor:** Dennis DeTurck 
 
-**Description:** TBA
+**Abstract:** The first-half of this thesis is mainly expository and serves as an introduction to Morse theory. This thesis will focus on introducing the standard tools in the finite-dimensional setting, both the traditional handle-body perspective and the modern flow perspective. In the second half, we construct an explicit intrinsic functions on certain Grassmannian manifolds and use it to compute the homology.
 
-**PDF Copy:** TBA
+**Thesis:** [PDF](papers/INTRINSIC%20MORSE%20FUNCTIONS%20ON%20GRASSMANNIANS.pdf)  
+**Presentation:** [Slides](talks/Intrinsic%20Morse%20Functions%20on%20Grassmannians%20Presentation.pdf)
 {{< /details >}}
 
 
@@ -72,5 +74,10 @@ Presentation: TBA
 **MATH 7610 - Geometry Seminar:** Intersection forms of 4-manifolds  
 Presentation: TBA
 
-**STAT 4770 - Statistics Programming using R:** Market Collapse Detection  
-Presentation: TBA
+**STAT 4770 - Statistical Programming in R:** EWS Detection using Topological Data Analysis  
+Report: [Final Report](class-projects/Final%20Report.pdf)  
+Presentation: [Slides]()   
+Code: TBA
+
+## Assorted Talks
+**Ross Mathematics Camp:** [Introduction to Fundamental Groups](talks/Intro%20to%20Fundamental%20Group.pdf)
