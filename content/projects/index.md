@@ -6,6 +6,16 @@ layout: single
 ---
 Listed below are some of my past projects.  
 
+## Undergraduate Thesis
+{{< details summary="Morse Functions on Grassmannian Manifolds " class="DRP">}}
+**Advisor:** Dennis DeTurck 
+
+**Description:** TBA
+
+**PDF Copy:** TBA
+{{< /details >}}
+
+
 ## Directed Reading Program Final Presentations/Write-ups
 {{< details summary="Knot Invariants using Algebraic Topology (Fall 2022)" class="DRP">}}
 **Mentor:** Yi Wang  
@@ -45,9 +55,22 @@ demonstrate some surprising properties.
 **Write-up:** [Besicovitch Sets](DRP-files/besicovitch%20sets.pdf)
 {{< /details >}}
 {{< details summary="Studying Mapping Class Groups using Dehn Twists (Spring 2025)" class="DRP">}}
-**Mentor:**  Ellis Buckminster  
+**Mentor:** Ellis Buckminster  
 
 **Description:** Mapping groups are a tool from algebraic topology that allows us to study certain topological spaces. This talk will explore how we can use Dehn Twists, a simple type of homeomorphism, to classify mapping class groups.  
 
 **Presentation:** [Dehn Twists](DRP-files/dehn%20twists.pdf)
 {{< /details>}}
+
+## Class Projects
+**MATH 5010 - Differential Geometry:** Curve Shortening Flow  
+Presentation: TBA
+
+**MATH 6010 - Algebraic Topology I:** Alexander Polynomials  
+Presentation: TBA
+
+**MATH 7610 - Geometry Seminar:** Intersection forms of 4-manifolds  
+Presentation: TBA
+
+**STAT 4770 - Statistics Programming using R:** Market Collapse Detection  
+Presentation: TBA
