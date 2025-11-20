@@ -22,7 +22,7 @@ Listed below are some of my past projects.
 {{< details summary="Knot Invariants using Algebraic Topology (Fall 2022)" class="DRP">}}
 **Mentor:** Yi Wang  
 
-**Description:** We hope to study some of the theory in the fields of topology and knot theory. In particular, the study of classifying and invariants used to distinguish spaces/knots. We begin the semester with a survey of standard techniques using Topology of Surfaces by L. Christine Kinsey and The Knot Book by Colin Adams. We will end it by reading the first chapters of Hyperbolic Knot Theory by Jessica Purcell.  
+**Description:** We hope to study some of the theory in the fields of topology and knot theory. In particular, the study of classifying and invariants used to distinguish spaces/knots. We begin the semester with a survey of standard techniques using [Topology of Surfaces](https://doi.org/10.1007/978-1-4612-0899-0) by L. Christine Kinsey and [The Knot Book](https://www.math.cuhk.edu.hk/course_builder/1920/math4900e/Adams--The%20Knot%20Book.pdf) by Colin Adams. We will end it by reading the first chapters of [Hyperbolic Knot Theory](https://doi.org/10.48550/arXiv.2002.12652) by Jessica Purcell.  
 
 **Presentation:** [The Figure-Eight Knot](DRP-files/figure%20eight%20knot.pdf)
 {{< /details >}}
