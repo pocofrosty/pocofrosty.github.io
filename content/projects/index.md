@@ -29,7 +29,7 @@ Listed below are some of my past projects.
 {{< details summary="Understanding Generating Functions (Spring 2023)" class="DRP">}}
 **Mentor:** Xinxuan (Jennifer) Zhang  
 
-**Description:** The goal of this project is to see the widespread use of generating functions in counting particularly difficult sequences that may not have a closed form. In many cases, the generating functions captures a lot of information. We will begin the semester by studying general combinatorial principles and tools using "The Art of Counting" by Bruce Sagan. Afterwards, we will focus more on generating functions and specific examples of their use in combinatorics, such as rook polynomials. We seek to understand generating functions more rigorously and how to manipulate them. After a few chapters, we will switch to select sections of Enumerative Combinatorics, Vol. 1 by Richard Stanley.  
+**Description:** The goal of this project is to see the widespread use of generating functions in counting particularly difficult sequences that may not have a closed form. In many cases, the generating functions captures a lot of information. We will begin the semester by studying general combinatorial principles and tools using [The Art of Counting](https://users.math.msu.edu/users/bsagan/Books/Aoc/final.pdf) by Bruce Sagan. Afterwards, we will focus more on generating functions and specific examples of their use in combinatorics, such as rook polynomials. We seek to understand generating functions more rigorously and how to manipulate them. After a few chapters, we will switch to select sections of [Enumerative Combinatorics, Vol. 1](https://www.ms.uky.edu/~sohum/putnam/enu_comb_stanley.pdf) by Richard Stanley.  
 
 **Presentation:** [Generating Functions](DRP-files/an%20introduction%20to%20generating%20functions.pdf)
 {{< /details >}}
@@ -43,7 +43,7 @@ Listed below are some of my past projects.
 {{< details summary="The Distinct Distances Problem (Spring 2024)" class="DRP">}}
 **Mentor:** Jae Ho Choi  
 
-**Description:** Suppose you were given n points to place in a plane. What is the minimum size of the set of distances between each pair of points? Despite the simple set-up, the bounding of this and related distance set problems, such as Falconer's conjecture, are generally difficult. We seek to understand some of the tools used to tackle them by reading through a paper "On the Erdős distinct distances problem in the plane" by Guth & Katz and assorted texts to get the necessary background.  
+**Description:** Suppose you were given n points to place in a plane. What is the minimum size of the set of distances between each pair of points? Despite the simple set-up, the bounding of this and related distance set problems, such as Falconer's conjecture, are generally difficult. We seek to understand some of the tools used to tackle them by reading through a paper ["On the Erdős distinct distances problem in the plane"](https://annals.math.princeton.edu/2015/181-1/p02) by Guth & Katz and assorted texts to get the necessary background.  
 
 **Write-up:** [Distinct Distances Problem](DRP-files/distinct%20distances%20problem.pdf)
 {{< /details >}}
