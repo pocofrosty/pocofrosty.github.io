@@ -259,7 +259,8 @@
 }
 
 /* Styling for sidenotes */
- @media screen and (min-width: 100em) {
+/* Control when .article-toc appears: Change 100em (1600px) to your preferred breakpoint */
+ @media screen and (min-width: 64em) {
 	 .article-toc {
 		 display: flex !important;
 	}
@@ -495,4 +496,25 @@ html {
 /* Remove part of the top margin from comments section */
 .comments {
 	margin-top: 0px;
+}
+
+/* Modify the scrollbar for sidenote and inline content */
+span.inline-content::-webkit-scrollbar {
+  width: 12px; /* width of the vertical scrollbar */
+  height: 12px; /* height of the horizontal scrollbar */
+}
+
+span.inline-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+  border-radius: 10px;
+}
+
+span.inline-content::-webkit-scrollbar-thumb {
+  background: #888; /* color of the thumb */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* creates a margin around the thumb */
+}
+
+span.inline-content::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the thumb on hover */
 }

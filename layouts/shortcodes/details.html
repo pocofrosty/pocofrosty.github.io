@@ -1,8 +1,0 @@
-{{ $body := .Inner }}
-{{ $summary := .Get "summary" }}
-{{ $class := .Get "class" }}
-
-<details {{ if $class }} class="{{ $class }}"{{ end }}>
-    <summary>{{ $summary | safeHTML }}</summary>
-   {{ $body | markdownify }}
-</details>

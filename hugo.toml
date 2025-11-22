@@ -36,6 +36,15 @@ ignoreLogs = ['warning-goldmark-raw-html']
       [markup.goldmark.renderHooks.links]
         useEmbedded = 'fallback'
 
+# Extra Markdown Extension Goldmark 
+[markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.insert]
+          enable = true
+        [markup.goldmark.extensions.extras.mark]
+          enable = true
+        [markup.goldmark.extensions.extras.superscript]
+          enable = true
+
 #Theme Imports
 [module]
   [[module.imports]]
