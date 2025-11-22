@@ -1,12 +1,15 @@
 if (self.location.hostname === 'localhost') {
   console.log('Service worker disabled on localhost');
 } else {
-  importScripts('https://cdn.bootcdn.net/ajax/libs/workbox-sw/7.1.0/workbox-sw.js')
+  importScripts('https://cdn.bootcdn.net/ajax/libs/workbox-sw/7.1.0/workbox-sw.js');
+  
+  // Force waiting service worker to become active
+  self.skipWaiting();
+  
+  if (workbox) {
+    workbox.core.clientsClaim();
+  }
 }
-
-// Force waiting service worker to become active
-self.skipWaiting();
-workbox.core.clientsClaim();
 
 if (workbox) {
   // Precache about, index, 404 pages
