@@ -4,11 +4,8 @@ if (self.location.hostname === 'localhost') {
   importScripts('https://cdn.bootcdn.net/ajax/libs/workbox-sw/7.1.0/workbox-sw.js');
   
   // Force waiting service worker to become active
-  self.skipWaiting();
-  
-  if (workbox) {
-    workbox.core.clientsClaim();
-  }
+  workbox.core.skipWaiting();
+  workbox.core.clientsClaim();
 }
 
 if (workbox) {
