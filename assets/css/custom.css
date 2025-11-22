@@ -260,7 +260,7 @@
 
 /* Styling for sidenotes */
 /* Control when .article-toc appears: Change 100em (1600px) to your preferred breakpoint */
- @media screen and (min-width: 64em) {
+ @media screen and (min-width: 90em) {
 	 .article-toc {
 		 display: flex !important;
 	}
