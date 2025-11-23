@@ -188,4 +188,9 @@ The icons are taken from [Simple Icons](https://simpleicons.org/). The emojis ar
 Hugo automatically generates an RSS feed. I replaced the link using [Subscribe Openly](https://subscribeopenly.net/) to make it more digestible.
 
 ## Embeddable PDFs
-Embedded PDF files may be viewed differently across browsers. To standardize this, I've used this [pdfjs viewer element](https://github.com/alekswebnet/pdfjs-viewer-element) directly.
+Embedded PDF files may be viewed differently across browsers. To standardize this, I've used a [pdfjs viewer element](https://github.com/alekswebnet/pdfjs-viewer-element) directly.
+
+{{< embedPDF src="example-pdf/PJAS-2020-2.pdf">}}
+
+## Robots.txt
+With excessive AI crawlers and LLMs being used today, I took care to implement a `robots.txt` file at the root of my project to [prevent crawlers](https://en.wikipedia.org/wiki/Robots.txt). Originally, I wrote it by hand, but using the method from [Dynamic Robots.txt with Hugo External Data Sources](https://runtimeterror.dev/dynamic-robots-txt-hugo-external-data-sources/) helps make sure that it stays somewhat up-to-date. Unfortunately, a non-compliant web bot could choose to simply ignore such protocols, but it would be difficult to prevent all of them without some serious security implementations. Note that despite blocking crawling, it does not block indexing by search engines necessarily, although it may impact the description generated.

@@ -47,7 +47,7 @@ Listed below are some of my past projects.
 
 **Write-up:** [Distinct Distances Problem](DRP-files/distinct%20distances%20problem.pdf)
 {{< /details >}}
-{{< details summary="Besicovitch Sets & Hausdorff Dimension (Fall 2024)" class="DRP">}}
+{{< details summary="Besicovitch Sets & Hausdorff Dimension (Fall 2024)" class="DRP" >}}
 **Mentor:** Hunter Stufflebeam  
 
 **Description:** Let S be a set that contains a line in every direction. How small can S be? What

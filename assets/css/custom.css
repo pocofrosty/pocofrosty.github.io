@@ -518,3 +518,11 @@ span.inline-content::-webkit-scrollbar-thumb {
 span.inline-content::-webkit-scrollbar-thumb:hover {
   background: #555; /* color of the thumb on hover */
 }
+
+/* Target h2 in sidebar for h1 styling */
+.sidebar-about h2 {
+	color: var(--sidebar_h1_color);
+	font-size: 1.5rem;
+	font-family: "abril fatface", serif;
+	font-weight: 300;
+}
