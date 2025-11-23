@@ -169,6 +169,11 @@ For VSCode users, I'd recommend [Front Matter](https://frontmatter.codes/), or [
 
 For Typora, it's useful to install some open-source themes from the [Themes Gallery](https://theme.typora.io/), as well as add some mathematical macros ([How to implement macros](https://github.com/typora/typora-issues/issues/100) and [Built-in and Customized Extra LaTeX Macros in Typora](https://gist.github.com/garylavayou/97fa124dec4ad15bbe7c9bf800f98f5a)).
 
+## VSCode Extensions
+Some VSCode Extensions are useful for working with Hugo. I used [Hugo Runner](https://marketplace.visualstudio.com/items?itemName=stuartleeks.vscode-hugo-runner) and [Hugo Language/Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode) for coding and testing the website. 
+
+For writing in VSCode directly, I'm still testing between multiple workflows. I use [Harper](https://marketplace.visualstudio.com/items?itemName=elijah-potter.harper), an open source spellchecker alongside [FrontMatter CMS](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter-beta). For more intensive writing, I use [Typora](https://typora.io/) and the [Open in External App](https://marketplace.visualstudio.com/items?itemName=YuTengjing.open-in-external-app) extension to make the swap seamless. 
+
 ## Email Link Symbols, Emojis & Icons
 
 We can use a CSS selector to add an SVG icon after links. 
