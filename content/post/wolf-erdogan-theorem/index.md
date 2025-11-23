@@ -224,6 +224,6 @@ On the other hand, it does not yet show Theorem 15.5, since finite measures may 
 
 [^3]: We can look at the counterexamples given on Page 209. 
 
-[^4]: ![](images/whitney_decomposition.png)
+[^4]: ![Whitney Decomposition](images/whitney_decomposition.png)
 
-[^5]: ![](images/dyadic_subregions.png)
+[^5]: ![Dyadic Subregions](images/dyadic_subregions.png)
