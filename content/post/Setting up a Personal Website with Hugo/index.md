@@ -199,3 +199,6 @@ Embedded PDF files may be viewed differently across browsers. To standardize thi
 
 ## Robots.txt
 With excessive AI crawlers and LLMs being used today, I took care to implement a `robots.txt` file at the root of my project to [prevent crawlers](https://en.wikipedia.org/wiki/Robots.txt). Originally, I wrote it by hand, but using the method from [Dynamic Robots.txt with Hugo External Data Sources](https://runtimeterror.dev/dynamic-robots-txt-hugo-external-data-sources/) helps make sure that it stays somewhat up-to-date. Unfortunately, a non-compliant web bot could choose to simply ignore such protocols, but it would be difficult to prevent all of them without some serious security implementations. Note that despite blocking crawling, it does not block indexing by search engines necessarily, although it may impact the description generated.
+
+## Three.js
+Following the implementation by [Redstrate](https://redstrate.com/blog/2025/01/integrating-katex-and-three.js-into-hugo/) and [Jorge Martinez](https://jorgemartinez.space/posts/tutorials/running-threejs-in-my-website/), we add a shortcode `layouts\shortcodes\threejs.html` for adding mathematical animations in WebGL. I'm still playing around, so this section will be updated in the future with a better tutorial. 

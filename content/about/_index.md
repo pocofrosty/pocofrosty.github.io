@@ -9,7 +9,7 @@ readingtime: false
 
 ## About Darren Zheng
 
-Hello there :wave:! I'm Darren Zheng, a recent graduate from the University of Pennsylvania (Class of 2025), where I earned a Bachelor of Art's in Mathematics and minor in Data Science & Statistics. My primary mathematical interests are in low-dimensional topology, functional analysis and geometric measure theory.
+Hello there :wave:! I'm Darren Zheng (he/him), a recent graduate from the University of Pennsylvania (Class of 2025), where I earned a Bachelor of Art's in Mathematics and minor in Data Science & Statistics. My primary mathematical interests are in low-dimensional topology, functional analysis and geometric measure theory.
 
 ## What You Will Find Here
 

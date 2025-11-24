@@ -48,7 +48,7 @@
 {{ end -}}
 
 <!-- Title Tags -->
-<title itemprop="name">{{ .Scratch.Get "title" }}</title>
+<title itemprop="name">{{ .Site.Title }}</title>
 <meta property="og:title" content={{ .Scratch.Get "title" }} />
 <meta name="twitter:title" content={{ .Scratch.Get "title" }} />
 <meta itemprop="name" content={{ .Scratch.Get "title" }} />
