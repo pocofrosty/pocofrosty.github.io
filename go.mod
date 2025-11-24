@@ -1,4 +1,4 @@
-module github.com/pocofrosty/pocofrosty.github.io
+module github.com/darrenzheng24/darrenzheng24.github.io
 
 go 1.24.3
 
