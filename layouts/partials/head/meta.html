@@ -9,7 +9,14 @@
   {{ .Scratch.Set "title" $.Site.Title }}
   {{ .Scratch.Set "description" .Site.Params.Description }}
 {{ else }}
-  {{ .Scratch.Set "description" .Description }}
+  {{ $description := .Description }}
+  {{ if not $description }}
+    {{ $description = .Summary | plainify | truncate 160 }}
+  {{ end }}
+  {{ if not $description }}
+    {{ $description = .Site.Params.Description }}
+  {{ end }}
+  {{ .Scratch.Set "description" $description }}
 {{ end }}
 
 {{ if .IsSection }}
@@ -29,7 +36,7 @@
 {{ with $image_path }}
   {{ $image_path_local :=  printf "assets/%s" $image_path -}}
   {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
-  {{ if fileExists $image_path_local -}}
+  {{ if fileExists $image_path_local -}} 
     {{ $image_path:= resources.Get $image_path}}
     <meta property="og:image" content="{{ $image_path.RelPermalink }}" />
     {{/* If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  */ -}}

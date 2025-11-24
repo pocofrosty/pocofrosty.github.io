@@ -6,3 +6,4 @@ TO-DO List:
 4. [ ] Need to find a way to document all the frontmatter in my posts
 5. [ ] Better documentation of the hugo.toml file
 6. [ ] Fix Frontmatter CMS settings
+7. [ ] Fix OpenGraph Image logic
