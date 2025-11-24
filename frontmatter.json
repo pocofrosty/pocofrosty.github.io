@@ -43,6 +43,16 @@
           "title": "Series",
           "name": "series",
           "type": "series"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "datetime"
         }
       ]
     }

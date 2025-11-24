@@ -1,7 +1,7 @@
 # Default Settings 
 baseURL = 'https://darrenzheng24.github.io/'
 languageCode = 'en-us'
-title = 'Darren Zheng | University of Pennsylvania' #Shown in Online Search Index
+title = 'Darren Zheng | University of Pennsylvania' #Shown in sidebar
 RelativeURLs=true
 CanonifyURLs=true
 enableEmoji = true
@@ -68,11 +68,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 #Theme Specific Settings
 [params]
-  #Used for Search Index + Embed
-  description = "Greetings, welcome to the personal site of Darren Zheng (he/him)! I'm a recent C'25 graduate with a B.A. in Mathematics from the University of Pennsylvania." 
   #Used for sidebar
   brand = "Darren Zheng"
   sidebar_description = "Personal Website" 
+  #used for search indices
+  description = "Greetings, welcome to the personal site of Darren Zheng (he/him)! I'm a recent C'25 graduate with a B.A. in Mathematics from the University of Pennsylvania." 
   dark_mode = false
   brand_image = "/images/profile-professional.jpg"    # path to the image shown in the sidebar
   # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
