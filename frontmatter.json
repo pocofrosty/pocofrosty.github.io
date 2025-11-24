@@ -52,7 +52,17 @@
         {
           "title": "description",
           "name": "description",
-          "type": "datetime"
+          "type": "string"
+        },
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        },
+        {
+          "title": "readingtime",
+          "name": "readingtime",
+          "type": "boolean"
         }
       ]
     }
@@ -67,6 +77,17 @@
     {
       "path": "[[workspace]]/content/about",
       "title": "about"
+    },
+    {
+      "path": "[[workspace]]/content/search",
+      "title": "search"
+    },
+    {
+      "path": "[[workspace]]/content/projects",
+      "title": "projects"
+    },
+    {
+      "path": "[[workspace]]/content/search"
     }
   ],
   "frontMatter.content.fmHighlight": true,
@@ -78,5 +99,7 @@
   ],
   "frontMatter.content.publicFolder": "static",
   "frontMatter.panel.openOnSupportedFile": false,
-  "frontMatter.content.snippets": {}
+  "frontMatter.content.snippets": {},
+  "frontMatter.website.host": "https://darrenzheng24.github.io/",
+  "frontMatter.framework.startCommand": "npx pagefind; hugo server -D --disableFastRender"
 }

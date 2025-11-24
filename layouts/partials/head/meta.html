@@ -6,7 +6,7 @@
 {{ end }}
 
 {{ if eq .Kind "home" }}
-  {{ .Scratch.Set "title" $.Site.Params.brand }}
+  {{ .Scratch.Set "title" $.Site.Title }}
   {{ .Scratch.Set "description" .Site.Params.Description }}
 {{ else }}
   {{ .Scratch.Set "description" .Description }}
