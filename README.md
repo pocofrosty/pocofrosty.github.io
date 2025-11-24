@@ -7,3 +7,4 @@ TO-DO List:
 5. [ ] Better documentation of the hugo.toml file
 6. [ ] Fix Frontmatter CMS settings
 7. [ ] Fix OpenGraph Image logic
+8. [ ] Seperate Hugo's config files into seperate directories.

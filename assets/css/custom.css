@@ -1,75 +1,4 @@
-/* Custom CSS Overrides and Additions */
-/* Resize for smaller mobile screens */
- @media (max-width: 48em) {
-	 .sidebar-about {
-		 display: flex;
-		 align-items: center;
-		 justify-content: center;
-	}
-	 .sidebar-about .brand-image {
-		 margin-right: 15px;
-	}
-	 .sidebar-about img {
-		 height: 140px;
-		 width: 140px;
-	}
-	 .sidebar-about h1 {
-		 font-size: 1.2em;
-	}
-	 .sidebar-about p {
-		 font-size: 1em;
-	}
-	 .sidebar-nav {
-		 margin: 10px;
-		 margin-bottom: 1em;
-	}
-	 .sidebar-nav li {
-		 display: inline-block;
-		 margin: 0 10px;
-	}
-	 .sidebar-nav li.bullet, li.sub-heading {
-		 display: none;
-	}
-	 aside.sidebar a.social, aside.sidebar p.footnote {
-		 display: none;
-	}
-	/* Center and make sidebar sticky in mobile view */
-	 aside.sidebar {
-		 position: static;
-		 margin: 0 auto;
-		 display: flex;
-		 flex-direction: column;
-		 align-items: center;
-		 justify-content: center;
-		 width: 100%;
-		 z-index: 100;
-		 padding: 0;
-		 max-width: 100%;
-	}
-	 .content, .container, footer {
-		 margin-right: 0 !important;
-		 padding-right: 20px !important;
-		 max-width: 100% !important;
-		 width: 100% !important;
-		 box-sizing: border-box;
-	}
-	 #sidebar-search-form {
-		 --width-of-input: 75% !important;
-	}
-}
-/* Larger screens */
- @media (min-width: 48em) {
-	 footer {
-		 display: none;
-	}
-	 .content::-webkit-scrollbar-thumb {
-		 background-color: rgb(200, 200, 200);
-		 border-radius: 10px;
-	}
-	 .content::-webkit-scrollbar-thumb:hover {
-		 background-color: rgb(150, 150, 150);
-	}
-}
+/* Custom CSS Base Overrides and General Layout */
 /* Katex font scaling override */
  .katex {
 	 font-size: 1.1em;
@@ -145,10 +74,22 @@
  #sidebar-search-form:focus-within:before {
 	 transform: scale(1);
 }
-/* sizing svg icons */
+/* sizing svg icons and button */
+ #sidebar-search-form button {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 40px;
+	/* match form height */
+	 height: 40px;
+	/* ensures consistent sizing */
+}
  #sidebar-search-form svg {
-	 width: 17px;
 	 margin-top: 3px;
+	/* remove the nudge */
+	 width: 20px;
+	/* or larger if you want */
+	 height: 20px;
 }
  .heading {
 	 margin-top: 20px !important;
@@ -185,14 +126,7 @@
  .content {
 	 max-width: 48rem;
 }
- .article-toc ol {
-	 padding-left: 20px;
-}
-/* Adds bullets for Recent under Sidebar */
- .sidebar-nav .bullet {
-	 list-style-type: square;
-	 margin-left: 1.5em;
-}
+
 /* Spacing for search results */
  .search-result {
 	margin-top: 1.2rem;
@@ -200,27 +134,6 @@
 /* Customize scrollbar for content area */
  .content.container::-webkit-scrollbar {
 	 width: 8px !important;
-}
- #sidebar-search-form button {
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 width: 40px;
-	/* match form height */
-	 height: 40px;
-	/* ensures consistent sizing */
-}
- #sidebar-search-form svg {
-	 margin-top: 3px;
-	/* remove the nudge */
-	 width: 20px;
-	/* or larger if you want */
-	 height: 20px;
-}
-/* Dark theme reading time color override */
- body.dark-theme .reading-time {
-	 color: #f0ecec;
-	/* or any color you prefer */
 }
 /*Modify the read-more-link and .seriesname to be inline */
  .post-footer {
@@ -236,153 +149,9 @@
  .post {
 	 margin-bottom: 60px;
 }
- #TableOfContents {
-	 margin-left: 0px !important;
-}
-/* ToC Collapsible Styling */
- #contents {
-	 font-size: 1rem;
-	 font-weight: 400;
-	 line-height: 1.25;
-	 color: var(--text-color);
-	 margin: 1rem 0 .5rem 0;
-	 text-rendering: optimizeLegibility;
-}
- summary:empty::marker {
-	 content: none;
-	/* removes the marker entirely */
-}
 
-/* Expand ToC width if extra space available */
-.article-toc {
-	width: auto !important;
-}
 
-/* Styling for sidenotes */
-/* Control when .article-toc appears: Change 100em (1600px) to your preferred breakpoint */
- @media screen and (min-width: 90em) {
-	 .article-toc {
-		 display: flex !important;
-	}
-}
- .article-toc {
-	 flex-direction: column;
-	 align-items: flex-start;
-	 height: 85%;
-}
- .article-toc ol li {
-	 margin-bottom: 5px;
-}
- .toc-wrapper {
-	 margin-bottom: 20px;
-	 position: relative !important;
-	/* or just remove fixed */
-}
- .sidenote-wrapper {
-	 flex: 1;
-	 width: 100%;
-	 overflow: hidden;
-	 position: relative;
-}
-/* Sidenote label styling */
- :root {
-	 --neon-pink: #ff6ec7;
-}
- .sidenote:hover {
-	 background-color: var(--neon-pink);
-}
- .sidenote:hover .sidenote-label {
-	 text-decoration: none;
-}
- .sidenote:hover .sidenote-content {
-	 border: dashed 3px var(--neon-pink);
-}
- .sidenote {
-	 border-bottom: dashed 3px var(--neon-pink);
-}
- .sidenote-checkbox {
-	 display: none;
-}
- .sidenote-content {
-	 display: none;
-}
- .sidenote-item.visible {
-	 display: block;
-	 color: var(--text-color)
-}
- .sidenote-item {
-	 position: absolute;
-	 display: none;
-}
-/* Sidenote inline only */
- @media screen and (max-width: 100em) {
-	 .sidenote-content {
-		 position: static;
-		 margin-top: 10px;
-		 margin-bottom: 10px;
-		 width: 100%;
-		 display: none;
-		 padding: 20px;
-		 overflow-x: auto;
-	}
-	 .sidenote-checkbox:checked~.sidenote-content {
-		 display: block;
-	}
-	 .sidenote-item {
-		 display: none !important;
-	}
-}
-/* Inline label styling */
- :root {
-	 --gold: #e8be33;
-}
- .inline:hover {
-	 background-color: var(--gold);
-}
- .inline:hover .inline-label {
-	 text-decoration: none;
-}
- .inline .inline-content {
-	 border: dashed 3px var(--gold);
-}
- .inline {
-	 border-bottom: dashed 3px var(--gold);
-}
- .inline-checkbox {
-	 display: none;
-}
- .inline-item {
-	 position: absolute;
-	 display: none;
-}
- .inline-content {
-	 position: static;
-	 margin-top: 10px;
-	 margin-bottom: 10px;
-	 width: 100%;
-	 display: none;
-	 padding: 20px;
-	 overflow-x: auto;
-}
- .inline-checkbox:checked~.inline-content {
-	 display: block;
-}
- .inline-item {
-	 display: none !important;
-}
-/* Footnote image styling */
- .footnotes li img {
-	 max-width: 50%;
-	 height: auto;
-	 display: inline-block;
-	 vertical-align: top;
-}
- .footnotes li {
-	 list-style-position: outside;
-}
- .footnotes li:has(img) {
-	 list-style-position: outside;
-}
+
 /* Code Block Styling */
  pre {
 	 overflow-x: auto;
@@ -403,43 +172,25 @@
   	margin: 0 auto;
 }
 
-/* Adjusting the font sizes for h1-h6 elements */
-body.dark-theme .post h2, 
-body.dark-theme .post h3 {
-  text-decoration: underline;
-  color: orange;
-}
-
-/* Remove the color for light mode */
-.post h2, 
-.post h3 {
-  text-decoration: underline;
-  color: #1E1E1E;
-}
-
-/* add mail icon for links */
-.post a[href^="mailto:"]::after {
-  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 -75 485.211 485.211"><path fill="RoyalBlue" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/></svg>') " ";
-  font-size: 1em;
-  margin-left: 0.25em;
+/* Adds bullets for Recent under Sidebar */
+.sidebar-nav .bullet {
+	list-style-type: square;
+	margin-left: 1.5em;
 }
 
 .sidebar-nav {
 	margin-top: 1.5rem;
 }
 
-.DRP > summary{
+/* DRP (Details element) styling */
+.DRP > summary {
 	box-sizing: border-box;
 	background-color: #D3E298;
 	border-radius: 10px;
 	padding-left: 10px;
 }
 
-body.dark-theme .DRP > summary {
-    background-color: #3e5642; /* Replace with your desired color */
-}
-
-.DRP[open]> summary {
+.DRP[open] > summary {
 	border-radius: 10px 10px 0 0;
 	border-bottom: 1px solid #1E1E1E;
 }
@@ -458,24 +209,6 @@ html {
 	font-size: 19px;
 }
 
-/* Adjust posts list when on smaller screen */
-@media (max-width: 48em) {
-	.entries .post-list {
-		font-size: 0;
-	}
-	
-	.entries .post-list::after {
-		content: attr(shortenedtime);
-		font-size: 1rem;
-	}
-
-	.entries .title {
-		white-space: nowrap;
-		overflow: hidden;
-		max-inline-size: 70%;
-	}
-}
-
 /* adjust the overflow of post list */
 .entries .title {
 	white-space: wrap;
@@ -485,7 +218,7 @@ html {
 
 /* Remove top margin from the first h2 in a post */
 .post > h2:first-of-type {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 /* Adjust spacing for footer and comments */
@@ -498,31 +231,25 @@ html {
 	margin-top: 0px;
 }
 
-/* Modify the scrollbar for sidenote and inline content */
-span.inline-content::-webkit-scrollbar {
-  width: 12px; /* width of the vertical scrollbar */
-  height: 12px; /* height of the horizontal scrollbar */
+/* Footnote image styling */
+.footnotes li img {
+	max-width: 50%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
 }
 
-span.inline-content::-webkit-scrollbar-track {
-  background: #f1f1f1; /* color of the track */
-  border-radius: 10px;
+.footnotes li {
+	list-style-position: outside;
 }
 
-span.inline-content::-webkit-scrollbar-thumb {
-  background: #888; /* color of the thumb */
-  border-radius: 10px;
-  border: 3px solid #f1f1f1; /* creates a margin around the thumb */
+.footnotes li:has(img) {
+	list-style-position: outside;
 }
 
-span.inline-content::-webkit-scrollbar-thumb:hover {
-  background: #555; /* color of the thumb on hover */
-}
-
-/* Target h2 in sidebar for h1 styling */
-.sidebar-about h2 {
-	color: var(--sidebar_h1_color);
-	font-size: 1.5rem;
-	font-family: "abril fatface", serif;
-	font-weight: 300;
+/* Add mail icon for links */
+.post a[href^="mailto:"]::after {
+	content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 -75 485.211 485.211"><path fill="RoyalBlue" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/></svg>') " ";
+	font-size: 1em;
+	margin-left: 0.25em;
 }
