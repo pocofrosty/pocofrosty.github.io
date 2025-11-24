@@ -50,18 +50,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [[module.imports]]
     path = "github.com/lukeorth/poison"
   [[module.imports]]
-    disable = true
-    path = "github.com/adityatelange/hugo-PaperMod"
-  [[module.imports]]
-    disable = true
-    path = "github.com/pmichaillat/hugo-website"
-  [[module.imports]]
-    disable = true
-    path = "github.com/yihui/hugo-xmin"
-  [[module.imports]]
-    disable = true
-    path = "github.com/janraasch/hugo-bearblog"
-  [[module.imports]]
     path = "github.com/KKKZOZ/hugo-admonitions"
   [[module.imports]]
     path = "github.com/gohugoio/hugo-mod-jslibs/instantpage"
@@ -148,7 +136,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # Giscus comments settings
   [params.giscus]
     enable = true
-    repo = "pocofrosty/pocofrosty.github.io"
+    repo = "darrenzheng24/darrenzheng24.github.io"
     repoId = "R_kgDOO8yaKw"
     category = "Comments"
     categoryId = "DIC_kwDOO8yaK84CwB5F"
@@ -179,12 +167,3 @@ ignoreLogs = ['warning-goldmark-raw-html']
 # Clean Public Folder before Live Reload
 [build]
   cleanDestinationDir = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON", "WebAppManifest"]
-
-# [outputFormats.JSON]
-#   mediaType = "application/json"
-#   baseName = "index"
-#   isPlainText = true
-#   isHTML = false

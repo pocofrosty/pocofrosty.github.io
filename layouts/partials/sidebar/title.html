@@ -2,11 +2,11 @@
   <div class="brand-image">
     {{ if .Site.Params.remote_brand_image }}
       <a href="{{ .Site.BaseURL }}">
-        <img src="{{ .Site.Params.remote_brand_image }}" alt="brand image">
+        <img src="{{ .Site.Params.remote_brand_image }}" alt="{{ .Site.Params.brand | default "Site author" }} profile photo">
       </a>
     {{ else if .Site.Params.brand_image }}
       <a href="{{ .Site.BaseURL }}">
-        <img src="{{ .Site.Params.brand_image }}" alt="brand image">
+        <img src="{{ .Site.Params.brand_image }}" alt="{{ .Site.Params.brand | default "Site author" }} profile photo">
       </a>
     {{ end }}
   </div>
