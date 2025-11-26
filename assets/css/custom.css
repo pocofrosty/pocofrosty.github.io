@@ -262,3 +262,8 @@ html {
 	display: block;
 	margin: auto;
 }
+
+/* No CSS message hidden if CSS loads */
+#no-css-message {
+  display: none;
+}
