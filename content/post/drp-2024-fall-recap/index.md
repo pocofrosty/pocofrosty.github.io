@@ -4,7 +4,6 @@ date: 2025-10-23T19:59:52Z
 draft: true
 summary: Exploring Brownian motion and stochastic processes
 description: null
-cdn: []
 tags:
   - DRP
 series: DRP

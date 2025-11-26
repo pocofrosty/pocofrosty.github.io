@@ -4,7 +4,6 @@ date: 2025-09-26T23:08:47Z
 draft: true
 summary: Reflections on my first Directed Reading Program semester studying knot theory, covering knot invariants and algebraic topology foundations
 description: null
-cdn: []
 tags:
   - DRP
 series: DRP

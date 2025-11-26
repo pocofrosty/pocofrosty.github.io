@@ -4,7 +4,6 @@ date: 2025-09-26T23:08:47Z
 draft: true
 summary: Reflections on founding Penn Math Contest during my freshman year and the early challenges of building a student-led mathematics competition
 description: 
-cdn: []
 tags: []
 series: ""
 categories: []

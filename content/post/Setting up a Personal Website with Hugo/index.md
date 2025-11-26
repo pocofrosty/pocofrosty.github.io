@@ -4,7 +4,6 @@ date: 2025-06-19T16:52:25Z
 draft: false
 summary: Some details about creating this blog and implementing certain features
 description: null
-cdn: pdfjs
 tags: ""
 series: ""
 categories: ""

@@ -4,7 +4,6 @@ date: 2025-10-10T00:21:47Z
 draft: true
 summary: Second DRP experience studying generating functions with Xinxuan Zhang, exploring combinatorial sequences and their polynomial representations
 description: null
-cdn: []
 tags:
   - DRP
 series: DRP

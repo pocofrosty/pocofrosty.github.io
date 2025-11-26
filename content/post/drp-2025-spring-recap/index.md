@@ -4,7 +4,6 @@ date: 2025-06-16T23:38:32Z
 draft: true
 summary: Final DRP semester studying mapping class groups and Dehn twists, exploring tools for classifying topological spaces
 description: null
-cdn: []
 tags:
   - DRP
 series: DRP

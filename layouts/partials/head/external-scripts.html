@@ -1,6 +1,6 @@
 {{/* External third-party scripts and dependencies */}}
 {{/* PDF.js viewer web component */}}
-{{ if in .Params.cdn "pdfjs" }}
+{{ if .HasShortcode "embedPDF" }}
     <script defer type="module" src="https://cdn.skypack.dev/pdfjs-viewer-element" crossorigin="anonymous"></script>
 {{ end }}
 
