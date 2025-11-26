@@ -1,11 +1,15 @@
 ---
 title: Wolff-Erdoğan Theorem
-date: 2025-11-05T05:57:13+00:00
+date: 2025-11-05T05:57:13Z
 draft: false
-summary: Explores an intermediate result towards solving Falconer's Conjecture, which establishes a lower bound of $\frac{n}{2} + \frac{1}{3}$
+summary: Explores an intermediate result towards solving Falconer's Conjecture, establishing a lower bound of $\frac{n}{2} + \frac{1}{3}$
 description: 
-featuredImage:
-series:
+cdn: []
+tags: []
+series: ""
+categories: []
+featuredImage: ""
+readingtime: true
 ---
 ## The Problem Set-up
 Falconer's Conjecture  asks if

@@ -1,6 +1,8 @@
 {{/* External third-party scripts and dependencies */}}
 {{/* PDF.js viewer web component */}}
-<script defer type="module" src="https://cdn.skypack.dev/pdfjs-viewer-element" crossorigin="anonymous"></script>
+{{ if in .Params.cdn "pdfjs" }}
+    <script defer type="module" src="https://cdn.skypack.dev/pdfjs-viewer-element" crossorigin="anonymous"></script>
+{{ end }}
 
 {{/* Simple Analytics - 100% privacy-first analytics */}}
 <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js" crossorigin="anonymous"></script>

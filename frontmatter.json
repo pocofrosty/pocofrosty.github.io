@@ -13,11 +13,6 @@
           "type": "string"
         },
         {
-          "title": "Summary",
-          "name": "summary",
-          "type": "string"
-        },
-        {
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",
@@ -25,14 +20,24 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
           "title": "Is in draft",
           "name": "draft",
           "type": "draft"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "CDN",
+          "name": "cdn",
+          "type": "list"
         },
         {
           "title": "Tags",
@@ -42,25 +47,20 @@
         {
           "title": "Series",
           "name": "series",
-          "type": "series"
+          "type": "string"
         },
         {
-          "title": "categories",
+          "title": "Categories",
           "name": "categories",
           "type": "categories"
         },
         {
-          "title": "description",
-          "name": "description",
-          "type": "string"
+          "title": "Featured Image",
+          "name": "featuredImage",
+          "type": "image"
         },
         {
-          "title": "layout",
-          "name": "layout",
-          "type": "string"
-        },
-        {
-          "title": "readingtime",
+          "title": "Reading time",
           "name": "readingtime",
           "type": "boolean"
         }
@@ -85,12 +85,14 @@
     {
       "path": "[[workspace]]/content/projects",
       "title": "projects"
-    },
-    {
-      "path": "[[workspace]]/content/search"
     }
   ],
   "frontMatter.content.fmHighlight": true,
+  "frontMatter.taxonomy.commaSeparatedFields": [
+    "tags",
+    "categories",
+    "cdn"
+  ],
   "frontMatter.git.enabled": true,
   "frontMatter.media.supportedMimeTypes": [
     "image/*",
@@ -99,7 +101,139 @@
   ],
   "frontMatter.content.publicFolder": "static",
   "frontMatter.panel.openOnSupportedFile": false,
-  "frontMatter.content.snippets": {},
+  "frontMatter.content.snippets": {
+    "details": {
+      "description": "Collapsible details html element",
+      "body": [
+        "{{< details summary=\"[[summary]]\" class=\"[[class]]\" >}}",
+        "[[content]]",
+        "{{< /details >}}"
+      ],
+      "fields": [
+        {
+          "name": "summary",
+          "title": "summary",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "class",
+          "title": "class (optional)",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "content",
+          "title": "content",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    },
+    "embedPDF": {
+      "description": "Embed a PDF file using pdfjs-viewer",
+      "body": [
+        "{{< embedPDF src=\"[[src]]\" >}}"
+      ],
+      "fields": [
+        {
+          "name": "src",
+          "title": "PDF Source",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    },
+    "inlineNote": {
+      "description": "Inline collapsible note with optional image",
+      "body": [
+        "{{< inlineNote \"[[label]]\" \"[[image]]\" >}}",
+        "[[content]]",
+        "{{< /inlineNote >}}"
+      ],
+      "fields": [
+        {
+          "name": "label",
+          "title": "Label",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "image",
+          "title": "Image (optional)",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "content",
+          "title": "Content",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    },
+    "sidenote": {
+      "description": "Sidenote with optional image",
+      "body": [
+        "{{< sidenote \"[[label]]\" \"[[image]]\" >}}",
+        "[[content]]",
+        "{{< /sidenote >}}"
+      ],
+      "fields": [
+        {
+          "name": "label",
+          "title": "Label",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "image",
+          "title": "Image (optional)",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "content",
+          "title": "Content",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    },
+    "threejs": {
+      "description": "Embed a Three.js scene",
+      "body": [
+        "{{< threejs version=\"0.160.0\" id=\"[[id]]\" src=\"[[src]]\" >}}"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "title": "Container ID",
+          "type": "string",
+          "single": true,
+          "default": "scene"
+        },
+        {
+          "name": "src",
+          "title": "JavaScript Source File",
+          "type": "string",
+          "single": true,
+          "default": "/js/threejs/"
+        }
+      ]
+    }
+  },
   "frontMatter.website.host": "https://darrenzheng24.github.io/",
-  "frontMatter.framework.startCommand": "npx pagefind; hugo server -D --disableFastRender"
+  "frontMatter.framework.startCommand": "npx pagefind; hugo server -D --disableFastRender",
+  "frontMatter.content.hideFm": true,
+  "frontMatter.content.hideFmMessage": "Use the editor panel to make front matter changes",
+  "frontMatter.panel.actions.disabled": ["optimizeSlug"],
+  "frontMatter.site.baseURL": "https://darrenzheng24.github.io",
+  "frontMatter.snippets.wrapper.enabled": false,
+  "frontMatter.taxonomy.quoteStringValues": true
 }

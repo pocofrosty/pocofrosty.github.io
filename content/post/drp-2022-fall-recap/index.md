@@ -1,8 +1,16 @@
 ---
-date: 2025-09-26T23:08:47-04:00
-draft: true
 title: DRP 2022 Fall Recap
-series: "DRP"
+date: 2025-09-26T23:08:47Z
+draft: true
+summary: Reflections on my first Directed Reading Program semester studying knot theory, covering knot invariants and algebraic topology foundations
+description: null
+cdn: []
+tags:
+  - DRP
+series: DRP
+categories: []
+featuredImage: ""
+readingtime: true
 ---
 In this first post (in a planned series of 6), I want to revisit some of the topics of the semesters I spent as part of the Directed Reading Program (DRP) during my time at Penn. For those unfamiliar, a DRP pairs undergraduate students with graduate students to undergo a semester-long supervised study. These programs have a plethora of benefits for all parties involved:
 

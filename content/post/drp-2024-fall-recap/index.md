@@ -1,11 +1,16 @@
 ---
-title: drp-fall-2024
-date: 2025-10-23T19:59:52+00:00
+title: DRP 2024 Fall Recap
+date: 2025-10-23T19:59:52Z
 draft: true
-tags: [DRP]
+summary: Exploring Brownian motion and stochastic processes
+description: null
+cdn: []
+tags:
+  - DRP
+series: DRP
 categories: []
-description: "testoing"
-preview: null
+featuredImage: ""
+readingtime: true
 ---
 
 Travis on Brownian Motion

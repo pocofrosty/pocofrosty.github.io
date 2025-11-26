@@ -1,6 +1,13 @@
 ---
+title: "{{title}}"
 date: "{{date}}"
 draft: true
-title: "{{title}}"
 summary:
+description: 
+cdn: []
+tags: []
+series: ""
+categories: []
+featuredImage: ""
+readingtime: true
 ---

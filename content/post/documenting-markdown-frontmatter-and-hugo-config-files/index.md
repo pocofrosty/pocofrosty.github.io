@@ -1,13 +1,13 @@
 ---
 title: Documenting Markdown Frontmatter and Hugo Config Files
-summary: ""
-date: 2025-11-24T00:57:01.047Z
-preview: ""
+date: 2025-11-24T00:57:01Z
 draft: true
+summary: A standardized guide to frontmatter schema and Hugo configuration for maintaining consistent metadata
+description: null
+cdn: []
 tags: []
 series: ""
 categories: []
-description: ""
-layout: ""
+featuredImage: ""
 readingtime: true
 ---

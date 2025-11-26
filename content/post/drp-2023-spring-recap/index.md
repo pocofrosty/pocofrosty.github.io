@@ -1,11 +1,16 @@
 ---
 title: DRP 2023 Spring Recap
-description: 
-date: 2025-10-10T00:21:47+00:00
-preview: 
+date: 2025-10-10T00:21:47Z
 draft: true
+summary: Second DRP experience studying generating functions with Xinxuan Zhang, exploring combinatorial sequences and their polynomial representations
+description: null
+cdn: []
+tags:
+  - DRP
+series: DRP
 categories: []
-series: "DRP"
+featuredImage: ""
+readingtime: true
 ---
 
 This is the second post in my series about my DRP experience. At the start of my sophomore year, I started to take more topology, real analysis, and abstract algebra classes, so I decided to curate my DRP experience to focus on a different topic. I was paired with Xin (Jennifer) Zhang, a combinatorialist and we decided to study generating functions. We followed the great text "generatingfunctionology" by the late Herbert Wilf, a professor at UPenn. 

@@ -253,3 +253,12 @@ html {
 	font-size: 1em;
 	margin-left: 0.25em;
 }
+
+/* Three.js animation container styling */
+.threejs-content > canvas {
+	width: 80% !important;
+	height: auto !important;
+	object-fit: contain;
+	display: block;
+	margin: auto;
+}
