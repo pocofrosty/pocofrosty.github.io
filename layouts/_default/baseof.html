@@ -17,6 +17,27 @@
       {{ partial "sidebar/socials.html" . }}
       {{ partial "sidebar/copyright.html" . }}
     </footer>
+    <script>
+      // Initialize Medium Zoom after DOM is fully loaded 
+      window.addEventListener('load', function() {
+        if (typeof mediumZoom !== 'undefined') {
+          const images = document.querySelectorAll('.data-zoomable');
+          
+          if (images.length > 0) {
+            const zoom = mediumZoom(images, {
+              margin: 24,
+              background: 'rgb(242, 241, 235, 0.8)',
+              scrollOffset: 40,
+            });
+            
+            // Add cursor pointer to make it obvious images are clickable
+            images.forEach(img => {
+              img.style.cursor = 'zoom-in';
+            });
+          }
+        }
+      });
+    </script>
     {{ partialCached "jslibs/instantpage/script-src.html" "-" }}
   </body>
 </html>

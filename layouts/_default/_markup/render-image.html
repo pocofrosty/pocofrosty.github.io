@@ -38,7 +38,8 @@
     {{- with .Title }} title="{{ . }}"{{ end -}}
     loading="lazy"
     decoding="async"
-    style="max-width: 400px; width: 40%; height: auto;">
+    class="data-zoomable"
+    style="max-width: 400px; width: 40%; height: auto; display: block; margin: 0 auto;">
 {{- else -}}
   {{- /* Fallback for static images, external URLs, or SVG */ -}}
   <img
@@ -47,5 +48,6 @@
     {{- with .Title }} title="{{ . }}"{{ end -}}
     loading="lazy"
     decoding="async"
-    style="max-width: 400px; width: 40%; height: auto;">
+    style="max-width: 400px; width: 40%; height: auto; display: block; margin: 0 auto;"
+    class="data-zoomable">
 {{- end -}}
