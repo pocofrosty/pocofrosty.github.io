@@ -4,7 +4,7 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xEEEEEE);
 
 // Create a camera
-const camera = new THREE.PerspectiveCamera(20, 16/9, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(20,  window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
 
 // Create a renderer

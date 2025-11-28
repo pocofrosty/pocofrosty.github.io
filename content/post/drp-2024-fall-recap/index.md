@@ -1,13 +1,12 @@
 ---
-title: DRP 2024 Fall Recap
-date: 2025-10-23T19:59:52Z
+title: "DRP 2024 Fall Recap"
+date: "2025-10-23T19:59:52Z"
 draft: true
-summary: Exploring Brownian motion and stochastic processes
+summary: "Exploring Brownian motion and stochastic processes"
 description: null
-tags:
-  - DRP
-series: DRP
-categories: []
+tags: "DRP"
+series: "Directed Reading Program"
+categories: ""
 featuredImage: ""
 readingtime: true
 ---

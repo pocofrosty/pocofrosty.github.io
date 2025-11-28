@@ -6,7 +6,7 @@ summary: Reflections on my first Directed Reading Program semester studying knot
 description: null
 tags:
   - DRP
-series: DRP
+series: "Directed Reading Program"
 categories: []
 featuredImage: ""
 readingtime: true

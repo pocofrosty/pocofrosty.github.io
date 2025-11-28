@@ -1,13 +1,12 @@
 ---
-title: DRP 2023 Spring Recap
-date: 2025-10-10T00:21:47Z
+title: "DRP 2023 Spring Recap"
+date: "2025-10-10T00:21:47Z"
 draft: true
-summary: Second DRP experience studying generating functions with Xinxuan Zhang, exploring combinatorial sequences and their polynomial representations
+summary: "Second DRP experience studying generating functions with Xinxuan Zhang, exploring combinatorial sequences and their polynomial representations"
 description: null
-tags:
-  - DRP
-series: DRP
-categories: []
+tags: "DRP"
+series: "Directed Reading Program"
+categories: ""
 featuredImage: ""
 readingtime: true
 ---

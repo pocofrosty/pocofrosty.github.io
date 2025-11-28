@@ -35,11 +35,6 @@
           "type": "string"
         },
         {
-          "title": "CDN",
-          "name": "cdn",
-          "type": "list"
-        },
-        {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
